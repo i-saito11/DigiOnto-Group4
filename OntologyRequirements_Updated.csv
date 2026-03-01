@@ -9,11 +9,12 @@ req-07;¿Cuál es el valor de defensa física (Def) de un Digimon?;Un valor num�
 req-08;¿Cuál es la inteligencia o ataque mágico (Int) de un Digimon?;Un valor numérico entero (Integer).;Proposed;Atributo numérico de combate.;DigiDB.csv (Int);;
 req-09;¿Cuál es la velocidad (Spd) de un Digimon?;Un valor numérico entero (Integer).;Proposed;Determina el orden de turno.;DigiDB.csv (Spd);;
 req-10;¿Cuántos puntos de habilidad (SP) tiene un Digimon para usar habilidades?;Un valor numérico entero (Integer).;Proposed;Recurso para usar habilidades.;DigiDB.csv (SP);;
-req-11;¿Qué es una Habilidad de Soporte (Support Move)?;Una acción que no causa daño directo, sino que cura o aplica mejoras consumiendo SP.;Proposed;Concepto central del dataset extendido (acotado por el grupo).;DigimonMoves.csv (Move_Name);;
+req-11;¿Qué es una Habilidad de Soporte (Support Move)?;Una acción que no causa daño directo, sino que cura o aplica mejoras consumiendo SP.;Proposed;Concepto central del dataset extendido (acotado por el grupo).;DigiDB_supportlist.csv (Move_Name);;
 req-12;¿Cuál es la descripción del efecto de una habilidad de soporte?;Un texto detallando si cura, aumenta estadísticas o altera estados.;Proposed;Sustituye a 'Power'. Detalle cualitativo de la habilidad.;DigiDB_supportlist.csv (Description);req-11;
 req-13;Un Digimon puede aprender o utilizar múltiples Habilidades de Soporte.;;Proposed;Relación de cardinalidad 1 a N entre entidades.;DigiDB.csv y DigiDB_supportlist.csv;"req-01; req-11";
 req-14;"Toda habilidad modelada en esta ontología debe pertenecer estrictamente a la categoría ""Support"".";;Proposed;Restricción de alcance (Scoping) definida por el equipo de ingeniería.;DigiDB_supportlist.csv (Type);req-11;
 req-15;Todo Digimon debe tener exactamente un Tipo (Type).;;Proposed;Restricción lógica de cardinalidad exacta 1.;DigiDB.csv (Type);req-03;
 req-16;Todo Digimon debe tener exactamente un Atributo (Attribute).;;Proposed;Restricción lógica de cardinalidad exacta 1.;DigiDB.csv (Attribute);req-04;
 req-17;¿Qué habilidad pasiva (Ability) especial tiene el Digimon?;Un texto con el nombre de su rasgo único.;Proposed;Reemplaza a 'Memory' para aportar más valor semántico al ecosistema.;DigiDB.csv (Ability);req-01;
+
 
