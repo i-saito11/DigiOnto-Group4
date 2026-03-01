@@ -8,6 +8,6 @@ Para la creación de los requisitos de esta ontología hemos partido del dataset
    * **URL**: [https://www.kaggle.com/datasets/rtatman/digidb](https://www.kaggle.com/datasets/rtatman/digidb)
 
 2. **Dataset Adicional (Extensión del dominio)**
-   * **Nombre**: Digimon Movelist (Ataques y Habilidades)
-   * **Descripción**: Dataset complementario (incluido en la misma fuente principal) que lista los ataques, su coste de puntos de habilidad (SP), poder y atributo elemental, permitiendo relacionar criaturas con sus movimientos de combate.
-   * **URL**: [https://www.kaggle.com/datasets/rtatman/digidb?select=DigiDB_movelist.csv](https://www.kaggle.com/datasets/rtatman/digidb?select=DigiDB_movelist.csv)
+   * **Nombre**: Digimon Support Movelist (Habilidades de support)
+   * **Descripción**: Dataset complementario (incluido en la misma fuente principal) que lista las habilidades de support, con su descripción de lo que hace correspondiente.
+   * **URL**: [https://www.kaggle.com/datasets/rtatman/digidb?select=DigiDB_movelist.csv](https://www.kaggle.com/datasets/rtatman/digidb?select=DigiDB_supportlist.csv)
