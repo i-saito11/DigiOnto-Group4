@@ -16,8 +16,9 @@ req-14;"Toda habilidad incluida en esta ontología pertenece estrictamente a la 
 req-15;Todo Digimon debe tener exactamente un Tipo.;;Proposed;Restricción lógica de cardinalidad exacta 1.;DigiDB.csv (Type);req-03;
 req-16;Todo Digimon debe tener exactamente un Atributo.;;Proposed;Restricción lógica de cardinalidad exacta 1.;DigiDB.csv (Attribute);req-04;
 req-17;¿Qué habilidad pasiva (Ability) especial tiene el Digimon?;Un texto con el nombre de su rasgo único.;Proposed;Reemplaza a 'Memory' para aportar más valor semántico al ecosistema.;DigiDB.csv (Ability);req-01;
-req-18;Qué tipo de efecto puede tener una Habilidad de Soporte?;Puede afectar estadísticas, condiciones o atributos.;Proposed;Define el tipo de efecto de la habilidad.;DigiDB_supportlist.csv;;
-req-19;Una misma Habilidad de Soporte puede estar asociada a múltiples Digimon.;;Proposed;Relación muchos a muchos entre Digimon y habilidades.;DigiDB_supportlist.csv;;
+req-18;¿Qué tipo de efecto puede tener una Habilidad de Soporte?;Puede afectar estadísticas, condiciones o atributos.;Proposed;Define el tipo de efecto de la habilidad.;DigiDB_supportlist.csv;;
+req-19;Una misma Habilidad de Soporte puede estar asociada a múltiples Digimon.;;Proposed;Relación muchos a mcuhos (inversa de req-13);DigiDB_supportlist.csv;;
 req-20;Todo Digimon debe pertenecer exactamente a una Etapa Evolutiva (Stage).;;Proposed;Restricción lógica de cardinalidad exacta 1.;DigiDB.csv (Stage);;
+req-21;¿Puede un Digimon tener más de una habilidad pasiva?;No, cada Digimon tiene una única habilidad pasiva.;Proposed;Restricción de cardinalidad sobre Ability.;DigiDB.csv (Ability);req-17;
 
 
