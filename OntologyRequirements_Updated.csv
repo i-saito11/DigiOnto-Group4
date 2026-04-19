@@ -13,8 +13,8 @@ req-11;¿Qué es un Movimiento(Move)?;Una acción de combate que puede clasifica
 req-12;¿Cuál es la descripción del efecto de un Movimiento?;Un texto detallando el daño, curación, mejoras o alteraciones de estado.;Proposed;Detalle cualitativo de la habilidad.;DigiDB_movelist.csv (Description);req-11;
 req-13;Un Digimon puede aprender o utilizar múltiples Movimientos.;;Proposed;Relación de cardinalidad 1 a N entre entidades (learnsMove).;DigiDB.csv y DigiDB_movelist.csv;"req-01; req-11";
 req-14;Todo Movimiento pertenece a una y solo una de las siguientes categorías: Physical, Magic o Support.;;Proposed;Axioma de clases disjuntas (Covering axiom) para la jerarquía de Movimientos.;DigiDB_movelist.csv (Type);req-11;
-req-15;Todo Digimon debe tener exactamente un Tipo.;;Proposed;Restricción lógica de cardinalidad exacta 1.;DigiDB.csv (Type);req-03;
-req-16;Todo Digimon debe tener exactamente un Atributo(Attribute:Neutral,Fire,Light,Dark,Earth).;;Proposed;Restricción lógica de cardinalidad exacta 1.,.;DigiDB.csv (Attribute);req-04;
+req-15;Todo Digimon debe tener exactamente un Tipo (Type:Free,Virus,Vaccine,Data).;;Proposed;Restricción lógica de cardinalidad exacta 1.;DigiDB.csv (Type);req-03;
+req-16;Todo Digimon debe tener exactamente un Atributo (Attribute:Neutral,Fire,Light,Dark,Earth,Plant).;;Proposed;Restricción lógica de cardinalidad exacta 1.,.;DigiDB.csv (Attribute);req-04;
 req-17;¿Qué habilidad pasiva (Ability) especial tiene el Digimon?;Un texto con el nombre de su rasgo único.;Proposed;Reemplaza a 'Memory' para aportar más valor semántico al ecosistema.;DigiDB.csv (Ability);req-01;
 req-18;¿Qué estado alterado (Status Effect) puede infligir o curar un Movimiento?;Veneno, Parálisis, Sueño, etc.;Proposed;Genera una nueva clase para los estados alterados (StatusEffect).;DigiDB_movelist.csv (Description);req-11;
 req-19;Un mismo Movimiento puede ser aprendido por múltiples Digimon.;;Proposed;Relación muchos a muchos (inversa de req-13).;DigiDB_movelist.csv;;
