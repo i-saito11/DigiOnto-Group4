@@ -1,4 +1,4 @@
-﻿Identifier;Competency Question / Natural language sentence (fact);Answer (For Competency Questions);Status (Proposed, Accepted, Rejected, Deprecated);Comments (optional);Extracted from (provenance);Relation with other requirements (optional);Associated ontology elements (to be used after ontology  conceptualization assignment)
+Identifier;Competency Question / Natural language sentence (fact);Answer (For Competency Questions);Status (Proposed, Accepted, Rejected, Deprecated);Comments (optional);Extracted from (provenance);Relation with other requirements (optional);Associated ontology elements (to be used after ontology conceptualization assignment)
 req-01;¿Qué es un Digimon?;Una entidad digital caracterizada con atributos, estadísticas y habilidades.;Proposed;Concepto central de la ontología.;DigiDB.csv (General);;
 req-02;¿A qué etapa evolutiva pertenece un Digimon?;Baby, In-Training, Rookie, Champion, Ultimate, Mega, Ultra o Armor.;Proposed;Define el nivel de madurez.;DigiDB.csv (Stage);req-01;
 req-03;¿Qué tipo tiene un Digimon?;Vaccine, Virus, Data o Free.;Proposed;Fundamental para el triángulo de ventajas de combate.;DigiDB.csv (Type);req-01;
@@ -9,16 +9,18 @@ req-07;¿Cuál es el valor de defensa física (Def) de un Digimon?;Un valor num�
 req-08;¿Cuál es la inteligencia o ataque mágico (Int) de un Digimon?;Un valor numérico entero.;Proposed;Atributo numérico de combate.;DigiDB.csv (Int);;
 req-09;¿Cuál es la velocidad (Spd) de un Digimon?;Un valor numérico entero.;Proposed;Determina el orden de turno.;DigiDB.csv (Spd);;
 req-10;¿Cuántos puntos de habilidad (SP) tiene un Digimon para usar habilidades?;Un valor numérico entero.;Proposed;Recurso para usar habilidades.;DigiDB.csv (SP);;
-req-11;¿Qué es una Habilidad de Soporte (Support Move)?;Una acción que no causa daño directo, sino que cura o aplica mejoras consumiendo SP.;Proposed;Concepto central del dataset extendido (acotado por el grupo).;DigiDB_supportlist.csv (Move_Name);;
-req-12;¿Cuál es la descripción del efecto de una habilidad de soporte?;Un texto detallando si cura, aumenta estadísticas o altera estados.;Proposed;Sustituye a 'Power'. Detalle cualitativo de la habilidad.;DigiDB_supportlist.csv (Description);req-11;
-req-13;Un Digimon puede aprender o utilizar múltiples Habilidades de Soporte.;;Proposed;Relación de cardinalidad 1 a N entre entidades.;DigiDB.csv y DigiDB_supportlist.csv;"req-01; req-11";
-req-14;"Toda habilidad incluida en esta ontología pertenece estrictamente a la categoría Support.";;Proposed;Restricción de alcance del dominio.;DigiDB_supportlist.csv (Type);req-11;
+req-11;¿Qué es un Movimiento (Move)?;Una acción de combate que puede clasificarse en Ataque Físico, Ataque Mágico o Soporte.;Proposed;Concepto jerárquico principal de las habilidades, permite crear subclases.;DigiDB_movelist.csv (Type);;
+req-12;¿Cuál es la descripción del efecto de un Movimiento?;Un texto detallando el daño, curación, mejoras o alteraciones de estado.;Proposed;Detalle cualitativo de la habilidad.;DigiDB_movelist.csv (Description);req-11;
+req-13;Un Digimon puede aprender o utilizar múltiples Movimientos.;;Proposed;Relación de cardinalidad 1 a N entre entidades (learnsMove).;DigiDB.csv y DigiDB_movelist.csv;"req-01; req-11";
+req-14;Todo Movimiento pertenece a una y solo una de las siguientes categorías: Physical, Magic o Support.;;Proposed;Axioma de clases disjuntas (Covering axiom) para la jerarquía de Movimientos.;DigiDB_movelist.csv (Type);req-11;
 req-15;Todo Digimon debe tener exactamente un Tipo.;;Proposed;Restricción lógica de cardinalidad exacta 1.;DigiDB.csv (Type);req-03;
-req-16;Todo Digimon debe tener exactamente un Atributo.;;Proposed;Restricción lógica de cardinalidad exacta 1.;DigiDB.csv (Attribute);req-04;
+req-16;Todo Digimon debe tener exactamente un Atributo (Elemento).;;Proposed;Restricción lógica de cardinalidad exacta 1. (Se complementa con Tipos, Etapas y Estadísticas para enriquecer al Digimon).;DigiDB.csv (Attribute);req-04;
 req-17;¿Qué habilidad pasiva (Ability) especial tiene el Digimon?;Un texto con el nombre de su rasgo único.;Proposed;Reemplaza a 'Memory' para aportar más valor semántico al ecosistema.;DigiDB.csv (Ability);req-01;
-req-18;¿Qué tipo de efecto puede tener una Habilidad de Soporte?;Puede afectar estadísticas, condiciones o atributos.;Proposed;Define el tipo de efecto de la habilidad.;DigiDB_supportlist.csv;;
-req-19;Una misma Habilidad de Soporte puede estar asociada a múltiples Digimon.;;Proposed;Relación muchos a mcuhos (inversa de req-13);DigiDB_supportlist.csv;;
+req-18;¿Qué estado alterado (Status Effect) puede infligir o curar un Movimiento?;Veneno, Parálisis, Sueño, etc.;Proposed;Genera una nueva clase para los estados alterados (StatusEffect).;DigiDB_movelist.csv (Description);req-11;
+req-19;Un mismo Movimiento puede ser aprendido por múltiples Digimon.;;Proposed;Relación muchos a muchos (inversa de req-13).;DigiDB_movelist.csv;;
 req-20;Todo Digimon debe pertenecer exactamente a una Etapa Evolutiva (Stage).;;Proposed;Restricción lógica de cardinalidad exacta 1.;DigiDB.csv (Stage);;
 req-21;¿Puede un Digimon tener más de una habilidad pasiva?;No, cada Digimon tiene una única habilidad pasiva.;Proposed;Restricción de cardinalidad sobre Ability.;DigiDB.csv (Ability);req-17;
-
-
+req-22;¿Cuántas ranuras de equipamiento (Equip Slots) tiene un Digimon?;Un valor numérico entero.;Proposed;Atributo recuperado para enriquecer la entidad Digimon (Data Property).;DigiDB.csv (Equip Slots);req-01;
+req-23;¿Es un Movimiento heredable (Inheritable) a través de la evolución?;Un valor booleano (Sí/No).;Proposed;Propiedad recuperada para añadir características booleanas a los movimientos.;DigiDB_movelist.csv (Inheritable);req-11;
+req-24;¿Cuál es el coste de SP (SP Cost) necesario para ejecutar un Movimiento?;Un valor numérico entero.;Proposed;Propiedad de datos numérica del movimiento.;DigiDB_movelist.csv (SP Cost);req-11;
+req-25;¿Cuál es el poder base (Power) de un Movimiento de tipo Ataque (Físico o Mágico)?;Un valor numérico entero.;Proposed;Propiedad de datos exclusiva para subclases de ataque.;DigiDB_movelist.csv (Power);req-11;
