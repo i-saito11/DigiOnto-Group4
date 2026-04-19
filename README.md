@@ -18,7 +18,7 @@ Para cumplir con los criterios de evaluación de la asignatura, este repositorio
 La ontología se basa en la integración de las siguientes fuentes:
 1. **Dataset Principal asignado**: [DigiDB - Digimon Database](https://www.kaggle.com/datasets/rtatman/digidb) (Estadísticas base, atributos y tipos).
 2. **Dataset Adicional (Extensión del dominio)**: [DigiDB Support Movelist](https://www.kaggle.com/datasets/rtatman/digidb?select=DigiDB_supportlist.csv) (Ataques de support).
-3. **Dataset Adicional (Extensión del dominio)**: [DigiDB Movelits](https://www.kaggle.com/datasets/rtatman/digidb?select=DigiDB_movelist.csv) (Listado de ataques). Utilizando la sugerencia de clase hemos añadido este dataset pues, necesitamos más datos.
+3. **Dataset Adicional (Extensión del dominio)**: [DigiDB Movelist](https://www.kaggle.com/datasets/rtatman/digidb?select=DigiDB_movelist.csv) (Listado de ataques). Utilizando la sugerencia de clase hemos añadido este dataset pues, necesitamos más datos.
 
 ##  Autores - Grupo 4
 * Miguel Díaz Martín
