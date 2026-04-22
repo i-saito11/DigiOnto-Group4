@@ -20,7 +20,7 @@ Para cumplir con los criterios de evaluación de la asignatura, este repositorio
   * **Diagrama Inicial**: Primer borrador del modelo conceptual (`diagrama_inicial.drawio` y `Chowlk_Developing.drawio.pdf`).
   * **Diagrama Corregido**: Versión final refinada tras aplicar las correcciones pertinentes (`diagrama_corregido.drawio` y `diagrama_corregido.drawio.pdf`).
  
-  * **`shacl/`**: Carpeta destinada a la validación de la ontología mediante Shapes Constraint Language:
+ * **`shacl/`**: Carpeta destinada a la validación de la ontología mediante Shapes Constraint Language:
     * **shapes.ttl**: Definición de las restricciones estructurales (Filtro de calidad) en lenguaje SHACL basadas en nuestros requisitos funcionales.
     * **data.ttl**: Instancias de prueba del dominio Digimon (tanto válidas como con errores inyectados a propósito) para evaluar las reglas.
     * **report.ttl**: Informe de validación generado que documenta qué datos cumplen con las reglas definidas y qué violaciones se han detectado.
