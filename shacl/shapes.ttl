@@ -1,0 +1,71 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns:    <http://example.org/digimon#> .
+
+ns:DigimonShape
+    a sh:NodeShape ;
+    rdfs:label "Validación Digimon" ;
+    rdfs:comment "Asegura que cada Digimon cumpla con atributos base y tipos correctos." ;
+    sh:targetClass ns:Digimon ;
+    sh:nodeKind sh:IRI ; 
+
+    # Etapa Evolutiva (req-20)
+    sh:property [
+        sh:path ns:hasEvolutionStage ;
+        sh:name "Etapa Evolutiva" ;
+        sh:description "Todo Digimon debe pertenecer exactamente a una Etapa (Rookie, Mega, etc.)." ;
+        sh:class ns:EvolutionStage ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Error de Cardinalidad: Se requiere exactamente una etapa evolutiva definida." ;
+    ] ;
+
+    # Tipo Digimon (req-15)
+    sh:property [
+        sh:path ns:hasType ;
+        sh:name "Tipo de Digimon" ;
+        sh:description "Solo se permiten tipos oficiales del triángulo de ventajas." ;
+        sh:in ( ns:Vaccine ns:Virus ns:Data ns:Free ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Error Semántico: El tipo debe ser uno de los valores permitidos (Vaccine, Virus, Data o Free)." ;
+    ] ;
+
+    #  Elemental (req-16)
+    sh:property [
+        sh:path ns:hasAttribute ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Todo Digimon debe poseer exactamente un atributo elemental." ;
+    ] ;
+
+    # Stats (req-05, req-09)
+    sh:property [
+        sh:path ns:hp ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:message "Error de Datos: Los puntos de salud (HP) deben ser un valor entero no negativo." ;
+    ] ;
+    
+    sh:property [
+        sh:path ns:spd ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:message "La velocidad (Spd) debe ser un valor numérico entero." ;
+    ] .
+
+ns:MoveShape
+    a sh:NodeShape ;
+    sh:targetClass ns:Move ;
+    sh:nodeKind sh:IRI ;
+
+    # SPcost (req-24)
+    sh:property [
+        sh:path ns:spCost ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:minCount 1 ;
+        sh:message "Todo movimiento debe especificar un coste de SP (entero >= 0)." ;
+    ] .
