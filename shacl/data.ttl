@@ -1,0 +1,32 @@
+@prefix ns:   <http://example.org/digimon#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+ns:Rookie a ns:EvolutionStage .
+ns:Champion a ns:EvolutionStage .
+
+ns:Agumon a ns:Digimon ;
+    ns:hasEvolutionStage ns:Rookie ;
+    ns:hasType ns:Vaccine ;
+    ns:hasAttribute ns:Fire ;
+    ns:hp 1050 ;
+    ns:spd 25 .
+
+ns:ErrorMon_Type a ns:Digimon ;
+    ns:hasEvolutionStage ns:Champion ;
+    ns:hasType ns:MagicType ; # ERROR: No está en la lista sh:in de shapes.ttl
+    ns:hasAttribute ns:Neutral ;
+    ns:hp 500 .
+
+ns:ErrorMon_NoStage a ns:Digimon ;
+    ns:hasType ns:Data ;
+    ns:hasAttribute ns:Water ;
+    ns:hp 800 . # ERROR: Falta hasEvolutionStage (sh:minCount 1)
+
+ns:ErrorMon_Stats a ns:Digimon ;
+    ns:hasEvolutionStage ns:Rookie ;
+    ns:hasType ns:Virus ;
+    ns:hasAttribute ns:Dark ;
+    ns:hp "Muy alto" ; # ERROR: Se esperaba xsd:integer
+    ns:spd -10 .      # ERROR: Violación de sh:minInclusive 0
