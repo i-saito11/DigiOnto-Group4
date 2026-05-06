@@ -1,10 +1,8 @@
-@prefix ns: <http://example.org/digimon#> .
-
 [
 	a sh:ValidationResult ;
 	sh:resultSeverity sh:Violation ;
 	sh:sourceConstraintComponent sh:InConstraintComponent ;
-	sh:sourceShape _:n239 ;
+	sh:sourceShape _:n2 ;
 	sh:focusNode <http://example.org/digimon#ErrorMon_Type> ;
 	sh:value <http://example.org/digimon#MagicType> ;
 	sh:resultPath <http://example.org/digimon#hasType> ;
@@ -14,7 +12,7 @@
 	a sh:ValidationResult ;
 	sh:resultSeverity sh:Violation ;
 	sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
-	sh:sourceShape _:n238 ;
+	sh:sourceShape _:n1 ;
 	sh:focusNode <http://example.org/digimon#ErrorMon_NoStage> ;
 	sh:resultPath <http://example.org/digimon#hasEvolutionStage> ;
 	sh:resultMessage "Error de Cardinalidad: Se requiere exactamente una etapa evolutiva definida." ;
@@ -23,7 +21,7 @@
 	a sh:ValidationResult ;
 	sh:resultSeverity sh:Violation ;
 	sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
-	sh:sourceShape _:n242 ;
+	sh:sourceShape _:n5 ;
 	sh:focusNode <http://example.org/digimon#ErrorMon_Stats> ;
 	sh:value "Muy alto" ;
 	sh:resultPath <http://example.org/digimon#hp> ;
@@ -33,35 +31,83 @@
 	a sh:ValidationResult ;
 	sh:resultSeverity sh:Violation ;
 	sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
-	sh:focusNode ns:<http://example.org/digimon#ErrorMon_Stats> ;
-	sh:value -10 ;
-	sh:resultPath ns:spd ;
-	sh:resultMessage "La velocidad (Spd) debe ser un valor numérico entero y no negativo." ;
+	sh:sourceShape _:n5 ;
+	sh:focusNode <http://example.org/digimon#ErrorMon_Stats> ;
+	sh:value "Muy alto" ;
+	sh:resultPath <http://example.org/digimon#hp> ;
+	sh:resultMessage "Error de Datos: Los puntos de salud (HP) deben ser un valor entero no negativo." ;
 ] .
 [
 	a sh:ValidationResult ;
 	sh:resultSeverity sh:Violation ;
 	sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
-	sh:sourceShape _:n243 ;
+	sh:sourceShape _:n6 ;
 	sh:focusNode <http://example.org/digimon#ErrorMon_Stats> ;
 	sh:value -10 ;
 	sh:resultPath <http://example.org/digimon#spd> ;
-	sh:resultMessage "La velocidad (Spd) debe ser un valor numérico entero y no negativo." ;
+	sh:resultMessage "La velocidad (Spd) debe ser un valor numérico entero." ;
 ] .
-
 [
 	a sh:ValidationResult ;
 	sh:resultSeverity sh:Violation ;
 	sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+	sh:sourceShape _:n7 ;
 	sh:focusNode <http://example.org/digimon#ErrorMove_Nocost> ;
+	sh:resultPath <http://example.org/digimon#spCost> ;
+	sh:resultMessage "Todo movimiento debe especificar un coste de SP (entero >= 0)." ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+	sh:sourceShape _:n8 ;
+	sh:focusNode <http://example.org/digimon#ErrorMon_Type> ;
+	sh:resultPath <http://example.org/digimon#learnsMove> ;
+	sh:resultMessage "Todo Digimon debe aprender al menos un Move válido." ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+	sh:sourceShape _:n8 ;
+	sh:focusNode <http://example.org/digimon#ErrorMon_NoStage> ;
+	sh:resultPath <http://example.org/digimon#learnsMove> ;
+	sh:resultMessage "Todo Digimon debe aprender al menos un Move válido." ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+	sh:sourceShape _:n8 ;
+	sh:focusNode <http://example.org/digimon#ErrorMon_Stats> ;
+	sh:resultPath <http://example.org/digimon#learnsMove> ;
+	sh:resultMessage "Todo Digimon debe aprender al menos un Move válido." ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+	sh:sourceShape _:n9 ;
+	sh:focusNode <http://example.org/digimon#WolkenapalmI> ;
+	sh:value <http://example.org/digimon#Fire> ;
 	sh:resultPath <http://example.org/digimon#hasMoveElement> ;
 	sh:resultMessage "El movimiento debe tener un elemento válido." ;
 ] .
-
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+	sh:sourceShape _:n9 ;
+	sh:focusNode <http://example.org/digimon#ErrorMove_Nocost> ;
+	sh:value <http://example.org/digimon#Dark> ;
+	sh:resultPath <http://example.org/digimon#hasMoveElement> ;
+	sh:resultMessage "El movimiento debe tener un elemento válido." ;
+] .
 [
 	a sh:ValidationResult ;
 	sh:resultSeverity sh:Violation ;
 	sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+	sh:sourceShape _:n10 ;
 	sh:focusNode <http://example.org/digimon#ErrorSupport_NoDesc> ;
 	sh:resultPath <http://example.org/digimon#description> ;
 	sh:resultMessage "Una habilidad de soporte debe tener una descripción." ;
