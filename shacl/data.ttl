@@ -25,7 +25,7 @@ ns:Agumon a ns:Digimon ;
     ns:hasType ns:Vaccine ;
     ns:hasAttribute ns:Fire ;
     ns:hp 1050 ;
-    ns:spd 25
+    ns:spd 25 ;
     ns:learnsMove ns:WolkenapalmI .
 
 ns:WolkenapalmI a ns:Move ;
