@@ -6,12 +6,31 @@
 ns:Rookie a ns:EvolutionStage .
 ns:Champion a ns:EvolutionStage .
 
+ns:Fire a ns:Attribute .
+ns:Light a ns:Attribute .
+ns:Dark a ns:Attribute .
+ns:Neutral a ns:Attribute .
+ns:Water a ns:Attribute .
+ns:Plant a ns:Attribute .
+ns:Earth a ns:Attribute .
+
+
+ns:Vaccine a ns:Type .
+ns:Virus a ns:Type .
+ns:Data a ns:Type .
+ns:Free a ns:Type .
+
 ns:Agumon a ns:Digimon ;
     ns:hasEvolutionStage ns:Rookie ;
     ns:hasType ns:Vaccine ;
     ns:hasAttribute ns:Fire ;
     ns:hp 1050 ;
-    ns:spd 25 .
+    ns:spd 25
+    ns:learnsMove ns:WolkenapalmI .
+
+ns:WolkenapalmI a ns:Move ;
+    ns:spCost 3;
+    ns:hasMoveElement ns:Fire .
 
 ns:ErrorMon_Type a ns:Digimon ;
     ns:hasEvolutionStage ns:Champion ;
@@ -30,3 +49,8 @@ ns:ErrorMon_Stats a ns:Digimon ;
     ns:hasAttribute ns:Dark ;
     ns:hp "Muy alto" ; # ERROR: Se esperaba xsd:integer
     ns:spd -10 .      # ERROR: Violación de sh:minInclusive 0
+
+ns:ErrorMove_Nocost a ns:Move ;
+        ns:hasMoveElement ns:Dark .
+
+ns:ErrorSupport_NoDesc a ns:SupportMove .
