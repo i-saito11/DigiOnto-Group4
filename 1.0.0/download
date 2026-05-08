@@ -1,0 +1,415 @@
+<h2 id="crossreference" class="list">Cross reference for [Ontology Name] classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by [Ontology Name].
+<div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://example.org/digimon#Agumon" title="http://example.org/digimon#Agumon">
+            <span>agumon</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#Champion" title="http://example.org/digimon#Champion">
+            <span>champion</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#Dark" title="http://example.org/digimon#Dark">
+            <span>dark</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#Data" title="http://example.org/digimon#Data">
+            <span>data</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#Earth" title="http://example.org/digimon#Earth">
+            <span>earth</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#ErrorMon_NoStage" title="http://example.org/digimon#ErrorMon_NoStage">
+            <span>error mon no stage</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#ErrorMon_Stats" title="http://example.org/digimon#ErrorMon_Stats">
+            <span>error mon stats</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#ErrorMon_Type" title="http://example.org/digimon#ErrorMon_Type">
+            <span>error mon type</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#ErrorMove_Nocost" title="http://example.org/digimon#ErrorMove_Nocost">
+            <span>error move nocost</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#ErrorSupport_NoDesc" title="http://example.org/digimon#ErrorSupport_NoDesc">
+            <span>error support no desc</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#Fire" title="http://example.org/digimon#Fire">
+            <span>fire</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#Free" title="http://example.org/digimon#Free">
+            <span>free</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#Light" title="http://example.org/digimon#Light">
+            <span>light</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#Neutral" title="http://example.org/digimon#Neutral">
+            <span>neutral</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#Plant" title="http://example.org/digimon#Plant">
+            <span>plant</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#Rookie" title="http://example.org/digimon#Rookie">
+            <span>rookie</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#Vaccine" title="http://example.org/digimon#Vaccine">
+            <span>vaccine</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#Virus" title="http://example.org/digimon#Virus">
+            <span>virus</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#Water" title="http://example.org/digimon#Water">
+            <span>water</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://example.org/digimon#WolkenapalmI" title="http://example.org/digimon#WolkenapalmI">
+            <span>wolkenapalm i</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://example.org/digimon#Agumon">
+      <h3>agumon<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#Agumon</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Digimon">digimon</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#Champion">
+      <h3>champion<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#Champion</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#EvolutionStage">evolution stage</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#Dark">
+      <h3>dark<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#Dark</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Attribute">attribute</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#Data">
+      <h3>data<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#Data</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Type">type</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#Earth">
+      <h3>earth<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#Earth</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Attribute">attribute</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#ErrorMon_NoStage">
+      <h3>error mon no stage<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#ErrorMon_NoStage</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Digimon">digimon</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#ErrorMon_Stats">
+      <h3>error mon stats<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#ErrorMon_Stats</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Digimon">digimon</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#ErrorMon_Type">
+      <h3>error mon type<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#ErrorMon_Type</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Digimon">digimon</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#ErrorMove_Nocost">
+      <h3>error move nocost<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#ErrorMove_Nocost</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Move">move</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#ErrorSupport_NoDesc">
+      <h3>error support no desc<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#ErrorSupport_NoDesc</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#SupportMove">support move</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#Fire">
+      <h3>fire<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#Fire</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Attribute">attribute</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#Free">
+      <h3>free<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#Free</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Type">type</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#Light">
+      <h3>light<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#Light</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Attribute">attribute</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#Neutral">
+      <h3>neutral<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#Neutral</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Attribute">attribute</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#Plant">
+      <h3>plant<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#Plant</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Attribute">attribute</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#Rookie">
+      <h3>rookie<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#Rookie</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#EvolutionStage">evolution stage</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#Vaccine">
+      <h3>vaccine<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#Vaccine</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Type">type</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#Virus">
+      <h3>virus<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#Virus</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Type">type</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#Water">
+      <h3>water<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#Water</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Attribute">attribute</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://example.org/digimon#WolkenapalmI">
+      <h3>wolkenapalm i<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://example.org/digimon#WolkenapalmI</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://example.org/digimon#Move">move</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
