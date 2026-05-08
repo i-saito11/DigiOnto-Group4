@@ -1,34 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>DigiOnto - Índice de Versiones</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>DigiOnto: Ontología para el Ecosistema Digimon</title>
+    <style>
+        body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; padding-top: 40px; padding-bottom: 40px; color: #333; }
+        .container { width: 80%; margin: 0 auto; max-width: 1000px; }
+        h1 { font-size: 36px; line-height: 1; color: #222; }
+        h2 { border-bottom: 1px solid #e5e5e5; padding-bottom: 10px; margin-top: 40px; font-size: 28px; color: #333; }
+        dl { margin-top: 20px; margin-bottom: 20px; }
+        dt { font-weight: bold; float: left; width: 180px; clear: left; text-align: right; margin-bottom: 10px; color: #555; }
+        dd { margin-left: 200px; margin-bottom: 10px; }
+        a { color: #0088cc; text-decoration: none; }
+        a:hover { text-decoration: underline; color: #005580; }
+        .head { background-color: #f9f9f9; padding: 30px; border-radius: 6px; border: 1px solid #eee; }
+        .badges span { margin-right: 5px; }
+        p { font-size: 16px; line-height: 1.5; }
+        code { background-color: #f5f5f5; padding: 2px 4px; border-radius: 4px; color: #d14; font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
+    </style>
 </head>
 <body>
+<div class="container">
+    <div class="head">
+        <h1>DigiOnto: Ontología para el Ecosistema Digimon</h1>
+        <h2>Fecha de publicación: 2024-05-20</h2>
+        <dl>
+            <dt>Esta versión:</dt>
+            <dd><a href="https://w3id.org/digionto/1.0.0">https://w3id.org/digionto/1.0.0</a></dd>
+            
+            <dt>Última versión:</dt>
+            <dd><a href="https://w3id.org/digionto">https://w3id.org/digionto</a></dd>
+            
+            <dt>Revisión:</dt>
+            <dd>1.0.0</dd>
+            
+            <dt>Autores:</dt>
+            <dd>Miguel Díaz Martín</dd>
+            <dd>Íñigo Rodríguez Saito</dd>
+            <dd>Andrés Knyshayid Voronovskyy</dd>
+            <dd>José Gómez Monjo</dd>
+            
+            <dt>Descargar serialización:</dt>
+            <dd class="badges">
+                <span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a></span>
+                <span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a></span>
+                <span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a></span>
+            </dd>
+            
+            <dt>Licencia:</dt>
+            <dd>
+                <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="Apache 2.0" /></a>
+            </dd>
+            
+            <dt>Citar como:</dt>
+            <dd>Miguel Díaz Martín, Íñigo Rodríguez Saito, Andrés Knyshayid Voronovskyy, José Gómez Monjo. <em>DigiOnto: Ontología para el Ecosistema Digimon 1.0.0</em>.</dd>
+        </dl>
+    </div>
 
-    <h1>Proyecto DigiOnto (Grupo 4)</h1>
-    <p>Índice principal del repositorio. Navega por las diferentes versiones de la ontología a continuación.</p>
+    <div id="abstract">
+        <h2>Resumen (Abstract)</h2>
+        <p>DigiOnto es una ontología semántica diseñada para modelar el ecosistema de criaturas digitales (Digimon), sus líneas evolutivas y mecánicas de combate. Este recurso integra estadísticas base, atributos elementales y tipos para permitir aplicaciones como asistentes de construcción de equipos competitivos (Team Builder) y enciclopedias semánticas de combate.</p>
+    </div>
 
-    <h2>Versiones Disponibles</h2>
-    
-    <ul>
-        <li>
-            <strong>Carpeta: <a href="1.0.0/">Versión 1.0.0</a></strong>
-            <ul>
-                <li><a href="1.0.0/docs/index-es.html">Documentación HTML (WIDOCO)</a></li>
-                
-                <li><a href="1.0.0/ontology.ttl">Ontología (Formato Turtle .ttl)</a></li>
-                <li><a href="1.0.0/ontology.xml">Ontología (Formato RDF/XML .xml)</a></li>
-                
-                <li><a href="1.0.0/shacl/shapes.ttl">Reglas de validación SHACL</a></li>
-                <li><a href="1.0.0/diagramas/diagrama_corregido.drawio.pdf">Diagrama Conceptual (PDF)</a></li>
-                <li><a href="1.0.0/OntologyRequirements_Updated.csv">Requisitos Funcionales (CSV)</a></li>
-            </ul>
-        </li>
-    </ul>
+    <div id="description">
+        <h2>Descripción</h2>
+        <p>Esta ontología formaliza los conceptos extraídos de DigiDB, definiendo clases principales como <code>ns:Digimon</code>, <code>ns:EvolutionStage</code>, <code>ns:Move</code> y <code>ns:Element</code>. Además, establece axiomas lógicos para los atributos de combate (HP, Ataque, Velocidad) y modela el triángulo de ventajas de tipos (Vaccine, Virus, Data).</p>
+        <p>Para consultar el modelo visual sobre el que se fundamenta esta versión, puedes revisar el <a href="../diagramas/diagrama_corregido.drawio.pdf">Diagrama Conceptual en Chowlk</a> y el conjunto de reglas de validación en <a href="../shacl/shapes.ttl">SHACL</a>.</p>
+    </div>
 
-    <hr>
-    <p><small>Repositorio alojado en GitHub Pages para la asignatura Developing Open, Interoperable Semantic Resources.</small></p>
-
+    <hr style="margin-top: 40px; border: 0; border-top: 1px solid #eee;">
+    <p style="text-align: center; color: #999; font-size: 14px;">
+        Documentación generada para la asignatura <em>Developing Open, Interoperable Semantic Resources</em>.<br>
+        Inspirada en el formato de visualización HTML de WIDOCO.
+    </p>
+</div>
 </body>
 </html>
