@@ -24,22 +24,24 @@
         .history-item:last-child { border-bottom: none; }
         footer { text-align: center; padding: 40px; color: #95a5a6; font-size: 0.9em; }
         code { background: #f8f9fa; padding: 2px 5px; border-radius: 4px; color: #e74c3c; }
+        .status-pending { color: #e67e22; font-size: 0.85em; font-weight: normal; font-style: italic; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>DigiOnto <span class="version-badge">v1.0.1</span></h1>
-    <p>Especificación de Requisitos y Modelado Semántico del Dominio Digimon</p>
+    <p>Ontología Semántica para el Ecosistema Digimon (Grupo 4)</p>
 </header>
 
 <section id="about">
-    <h2>Sobre el Proyecto</h2>
-    <p>DigiOnto es una ontología desarrollada por el <strong>Grupo 4</strong> que formaliza el conocimiento sobre criaturas digitales, sus estadísticas de combate y sus procesos evolutivos. Este portal sirve como punto de acceso central para humanos y agentes software.</p>
+    <h2>Estado de la Ontología</h2>
+    <p>Este es el portal oficial de <strong>DigiOnto</strong>. Actualmente estamos finalizando el despliegue de la versión 1.0.1.</p>
     <div class="btn-group">
-        <a href="releases/1.0.1/docs/index-es.html" class="btn btn-primary">Documentación Actual (v1.0.1)</a>
-        <a href="ontology.ttl" class="btn btn-outline">Descargar Turtle (.ttl)</a>
-        <a href="shacl/shapes.ttl" class="btn btn-outline">Validación SHACL</a>
+        <!-- Estos enlaces funcionarán una vez generéis la carpeta docs/ y subáis el ontology.ttl a la raíz -->
+        <a href="docs/index-es.html" class="btn btn-primary">Ver Documentación <br><span class="status-pending">(Pendiente de subir carpeta docs/)</span></a>
+        <a href="ontology.ttl" class="btn btn-outline">Descargar Turtle (.ttl) <br><span class="status-pending">(Pendiente de subir ontology.ttl)</span></a>
+        <a href="shacl/shapes.ttl" class="btn btn-outline">Ver SHACL (Activo)</a>
     </div>
 </section>
 
@@ -47,19 +49,16 @@
     <h2>Metadatos FAIR</h2>
     <div class="metadata-grid">
         <div class="metadata-label">URI Persistente (w3id)</div>
-        <div><code>https://w3id.org/digionto</code></div>
+        <div><code>https://w3id.org/digionto</code> <span class="status-pending">(En revisión por w3id.org)</span></div>
         
         <div class="metadata-label">Autores</div>
         <div>Miguel Díaz Martín, Íñigo Rodríguez Saito, Andrés Knyshayid Voronovskyy, José Gómez Monjo</div>
         
-        <div class="metadata-label">Organización</div>
-        <div>Universidad Politécnica de Madrid (UPM)</div>
-        
         <div class="metadata-label">Licencia</div>
         <div><a href="LICENSE">Apache License 2.0</a></div>
         
-        <div class="metadata-label">Namespace</div>
-        <div><code>https://w3id.org/digionto#</code> (prefijo: <code>digi</code>)</div>
+        <div class="metadata-label">Repositorio GitHub</div>
+        <div><a href="https://github.com/mdiaz-ai/digionto-group4">mdiaz-ai/digionto-group4</a></div>
     </div>
 </section>
 
@@ -68,23 +67,24 @@
     <div class="history-list">
         <div class="history-item">
             <div>
-                <strong>v1.0.1 (Actual)</strong><br>
-                <small>Actualización de metadatos, soporte multilingüe y cumplimiento FOOPS!.</small>
+                <strong>v1.0.1 (En Desarrollo)</strong><br>
+                <small>Actualización de metadatos y mantenimiento FAIR.</small>
             </div>
-            <a href="releases/1.0.1/docs/index-es.html" style="color: #2980b9;">Ver detalles</a>
+            <span class="status-pending">Próximamente</span>
         </div>
         <div class="history-item">
             <div>
-                <strong>v1.0.0 (Legacy)</strong><br>
-                <small>Versión inicial con requisitos y diagramas conceptuales.</small>
+                <strong>v1.0.0 (Estable)</strong><br>
+                <small>Requisitos iniciales y diagramas corregidos.</small>
             </div>
-            <a href="1.0.0/diagramas/diagrama_corregido.drawio.pdf" style="color: #7f8c8d;">Ver recursos</a>
+            <!-- Ruta corregida a vuestra carpeta actual -->
+            <a href="1.0.0/diagramas/diagrama_corregido.drawio.pdf" style="color: #2980b9;">Ver Diagrama</a>
         </div>
     </div>
 </section>
 
 <footer>
-    <p>Proyecto para la asignatura: <em>Developing Open, Interoperable Semantic Resources</em></p>
+    <p><em>Developing Open, Interoperable Semantic Resources</em> - UPM</p>
     <p>&copy; 2024 Grupo 4 - DigiOnto Team</p>
 </footer>
 
