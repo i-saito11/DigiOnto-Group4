@@ -1,175 +1,200 @@
-[ {
-  "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
-}, {
-  "@id" : "http://example.org/digimon#Agumon",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Digimon" ],
-  "http://example.org/digimon#hasAttribute" : [ {
-    "@id" : "http://example.org/digimon#Fire"
-  } ],
-  "http://example.org/digimon#hasEvolutionStage" : [ {
-    "@id" : "http://example.org/digimon#Rookie"
-  } ],
-  "http://example.org/digimon#hasType" : [ {
-    "@id" : "http://example.org/digimon#Vaccine"
-  } ],
-  "http://example.org/digimon#hp" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1050"
-  } ],
-  "http://example.org/digimon#learnsMove" : [ {
-    "@id" : "http://example.org/digimon#WolkenapalmI"
-  } ],
-  "http://example.org/digimon#spd" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "25"
-  } ]
-}, {
-  "@id" : "http://example.org/digimon#Attribute",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://example.org/digimon#Champion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#EvolutionStage" ]
-}, {
-  "@id" : "http://example.org/digimon#Dark",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Attribute" ]
-}, {
-  "@id" : "http://example.org/digimon#Data",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Type" ]
-}, {
-  "@id" : "http://example.org/digimon#Digimon",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://example.org/digimon#Earth",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Attribute" ]
-}, {
-  "@id" : "http://example.org/digimon#ErrorMon_NoStage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Digimon" ],
-  "http://example.org/digimon#hasAttribute" : [ {
-    "@id" : "http://example.org/digimon#Water"
-  } ],
-  "http://example.org/digimon#hasType" : [ {
-    "@id" : "http://example.org/digimon#Data"
-  } ],
-  "http://example.org/digimon#hp" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "800"
-  } ]
-}, {
-  "@id" : "http://example.org/digimon#ErrorMon_Stats",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Digimon" ],
-  "http://example.org/digimon#hasAttribute" : [ {
-    "@id" : "http://example.org/digimon#Dark"
-  } ],
-  "http://example.org/digimon#hasEvolutionStage" : [ {
-    "@id" : "http://example.org/digimon#Rookie"
-  } ],
-  "http://example.org/digimon#hasType" : [ {
-    "@id" : "http://example.org/digimon#Virus"
-  } ],
-  "http://example.org/digimon#hp" : [ {
-    "@value" : "Muy alto"
-  } ],
-  "http://example.org/digimon#spd" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "-10"
-  } ]
-}, {
-  "@id" : "http://example.org/digimon#ErrorMon_Type",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Digimon" ],
-  "http://example.org/digimon#hasAttribute" : [ {
-    "@id" : "http://example.org/digimon#Neutral"
-  } ],
-  "http://example.org/digimon#hasEvolutionStage" : [ {
-    "@id" : "http://example.org/digimon#Champion"
-  } ],
-  "http://example.org/digimon#hasType" : [ {
-    "@id" : "http://example.org/digimon#MagicType"
-  } ],
-  "http://example.org/digimon#hp" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "500"
-  } ]
-}, {
-  "@id" : "http://example.org/digimon#ErrorMove_Nocost",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Move" ],
-  "http://example.org/digimon#hasMoveElement" : [ {
-    "@id" : "http://example.org/digimon#Dark"
-  } ]
-}, {
-  "@id" : "http://example.org/digimon#ErrorSupport_NoDesc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#SupportMove" ]
-}, {
-  "@id" : "http://example.org/digimon#EvolutionStage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://example.org/digimon#Fire",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Attribute" ]
-}, {
-  "@id" : "http://example.org/digimon#Free",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Type" ]
-}, {
-  "@id" : "http://example.org/digimon#Light",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Attribute" ]
-}, {
-  "@id" : "http://example.org/digimon#Move",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://example.org/digimon#Neutral",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Attribute" ]
-}, {
-  "@id" : "http://example.org/digimon#Plant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Attribute" ]
-}, {
-  "@id" : "http://example.org/digimon#Rookie",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#EvolutionStage" ]
-}, {
-  "@id" : "http://example.org/digimon#SupportMove",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://example.org/digimon#Type",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://example.org/digimon#Vaccine",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Type" ]
-}, {
-  "@id" : "http://example.org/digimon#Virus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Type" ]
-}, {
-  "@id" : "http://example.org/digimon#Water",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Attribute" ]
-}, {
-  "@id" : "http://example.org/digimon#WolkenapalmI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://example.org/digimon#Move" ],
-  "http://example.org/digimon#hasMoveElement" : [ {
-    "@id" : "http://example.org/digimon#Fire"
-  } ],
-  "http://example.org/digimon#spCost" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "3"
-  } ]
-}, {
-  "@id" : "http://example.org/digimon#hasAttribute",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://example.org/digimon#hasEvolutionStage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://example.org/digimon#hasMoveElement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://example.org/digimon#hasType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://example.org/digimon#hp",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://example.org/digimon#learnsMove",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://example.org/digimon#spCost",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://example.org/digimon#spd",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-} ]
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://example.org/digimon#hasAttribute
+<http://example.org/digimon#hasAttribute> rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/digimon#hasEvolutionStage
+<http://example.org/digimon#hasEvolutionStage> rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/digimon#hasMoveElement
+<http://example.org/digimon#hasMoveElement> rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/digimon#hasType
+<http://example.org/digimon#hasType> rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/digimon#hp
+<http://example.org/digimon#hp> rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/digimon#learnsMove
+<http://example.org/digimon#learnsMove> rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/digimon#spCost
+<http://example.org/digimon#spCost> rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/digimon#spd
+<http://example.org/digimon#spd> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.org/digimon#Attribute
+<http://example.org/digimon#Attribute> rdf:type owl:Class .
+
+
+###  http://example.org/digimon#Digimon
+<http://example.org/digimon#Digimon> rdf:type owl:Class .
+
+
+###  http://example.org/digimon#EvolutionStage
+<http://example.org/digimon#EvolutionStage> rdf:type owl:Class .
+
+
+###  http://example.org/digimon#Move
+<http://example.org/digimon#Move> rdf:type owl:Class .
+
+
+###  http://example.org/digimon#SupportMove
+<http://example.org/digimon#SupportMove> rdf:type owl:Class .
+
+
+###  http://example.org/digimon#Type
+<http://example.org/digimon#Type> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.org/digimon#Agumon
+<http://example.org/digimon#Agumon> rdf:type owl:NamedIndividual ,
+                                             <http://example.org/digimon#Digimon> ;
+                                    <http://example.org/digimon#hasAttribute> <http://example.org/digimon#Fire> ;
+                                    <http://example.org/digimon#hasEvolutionStage> <http://example.org/digimon#Rookie> ;
+                                    <http://example.org/digimon#hasType> <http://example.org/digimon#Vaccine> ;
+                                    <http://example.org/digimon#hp> 1050 ;
+                                    <http://example.org/digimon#learnsMove> <http://example.org/digimon#WolkenapalmI> ;
+                                    <http://example.org/digimon#spd> 25 .
+
+
+###  http://example.org/digimon#Champion
+<http://example.org/digimon#Champion> rdf:type owl:NamedIndividual ,
+                                               <http://example.org/digimon#EvolutionStage> .
+
+
+###  http://example.org/digimon#Dark
+<http://example.org/digimon#Dark> rdf:type owl:NamedIndividual ,
+                                           <http://example.org/digimon#Attribute> .
+
+
+###  http://example.org/digimon#Data
+<http://example.org/digimon#Data> rdf:type owl:NamedIndividual ,
+                                           <http://example.org/digimon#Type> .
+
+
+###  http://example.org/digimon#Earth
+<http://example.org/digimon#Earth> rdf:type owl:NamedIndividual ,
+                                            <http://example.org/digimon#Attribute> .
+
+
+###  http://example.org/digimon#ErrorMon_NoStage
+<http://example.org/digimon#ErrorMon_NoStage> rdf:type owl:NamedIndividual ,
+                                                       <http://example.org/digimon#Digimon> ;
+                                              <http://example.org/digimon#hasAttribute> <http://example.org/digimon#Water> ;
+                                              <http://example.org/digimon#hasType> <http://example.org/digimon#Data> ;
+                                              <http://example.org/digimon#hp> 800 .
+
+
+###  http://example.org/digimon#ErrorMon_Stats
+<http://example.org/digimon#ErrorMon_Stats> rdf:type owl:NamedIndividual ,
+                                                     <http://example.org/digimon#Digimon> ;
+                                            <http://example.org/digimon#hasAttribute> <http://example.org/digimon#Dark> ;
+                                            <http://example.org/digimon#hasEvolutionStage> <http://example.org/digimon#Rookie> ;
+                                            <http://example.org/digimon#hasType> <http://example.org/digimon#Virus> ;
+                                            <http://example.org/digimon#hp> "Muy alto" ;
+                                            <http://example.org/digimon#spd> -10 .
+
+
+###  http://example.org/digimon#ErrorMon_Type
+<http://example.org/digimon#ErrorMon_Type> rdf:type owl:NamedIndividual ,
+                                                    <http://example.org/digimon#Digimon> ;
+                                           <http://example.org/digimon#hasAttribute> <http://example.org/digimon#Neutral> ;
+                                           <http://example.org/digimon#hasEvolutionStage> <http://example.org/digimon#Champion> ;
+                                           <http://example.org/digimon#hasType> <http://example.org/digimon#MagicType> ;
+                                           <http://example.org/digimon#hp> 500 .
+
+
+###  http://example.org/digimon#ErrorMove_Nocost
+<http://example.org/digimon#ErrorMove_Nocost> rdf:type owl:NamedIndividual ,
+                                                       <http://example.org/digimon#Move> ;
+                                              <http://example.org/digimon#hasMoveElement> <http://example.org/digimon#Dark> .
+
+
+###  http://example.org/digimon#ErrorSupport_NoDesc
+<http://example.org/digimon#ErrorSupport_NoDesc> rdf:type owl:NamedIndividual ,
+                                                          <http://example.org/digimon#SupportMove> .
+
+
+###  http://example.org/digimon#Fire
+<http://example.org/digimon#Fire> rdf:type owl:NamedIndividual ,
+                                           <http://example.org/digimon#Attribute> .
+
+
+###  http://example.org/digimon#Free
+<http://example.org/digimon#Free> rdf:type owl:NamedIndividual ,
+                                           <http://example.org/digimon#Type> .
+
+
+###  http://example.org/digimon#Light
+<http://example.org/digimon#Light> rdf:type owl:NamedIndividual ,
+                                            <http://example.org/digimon#Attribute> .
+
+
+###  http://example.org/digimon#Neutral
+<http://example.org/digimon#Neutral> rdf:type owl:NamedIndividual ,
+                                              <http://example.org/digimon#Attribute> .
+
+
+###  http://example.org/digimon#Plant
+<http://example.org/digimon#Plant> rdf:type owl:NamedIndividual ,
+                                            <http://example.org/digimon#Attribute> .
+
+
+###  http://example.org/digimon#Rookie
+<http://example.org/digimon#Rookie> rdf:type owl:NamedIndividual ,
+                                             <http://example.org/digimon#EvolutionStage> .
+
+
+###  http://example.org/digimon#Vaccine
+<http://example.org/digimon#Vaccine> rdf:type owl:NamedIndividual ,
+                                              <http://example.org/digimon#Type> .
+
+
+###  http://example.org/digimon#Virus
+<http://example.org/digimon#Virus> rdf:type owl:NamedIndividual ,
+                                            <http://example.org/digimon#Type> .
+
+
+###  http://example.org/digimon#Water
+<http://example.org/digimon#Water> rdf:type owl:NamedIndividual ,
+                                            <http://example.org/digimon#Attribute> .
+
+
+###  http://example.org/digimon#WolkenapalmI
+<http://example.org/digimon#WolkenapalmI> rdf:type owl:NamedIndividual ,
+                                                   <http://example.org/digimon#Move> ;
+                                          <http://example.org/digimon#hasMoveElement> <http://example.org/digimon#Fire> ;
+                                          <http://example.org/digimon#spCost> 3 .
+
+
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
