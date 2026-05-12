@@ -166,6 +166,8 @@
 
 ###  http://example.org/digimon#strongAgainst
 :strongAgainst rdf:type owl:ObjectProperty ;
+               rdfs:domain :Type ;
+               rdfs:range :Type ;
                rdfs:label "strong against" .
 
 
