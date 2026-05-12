@@ -5,10 +5,13 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://example.org/digimon#> .
-
+@prefix dcterms:<http://purl.org/dc/terms/> .
 <http://example.org/digimon#> rdf:type owl:Ontology ;
-                               <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
-
+                               mod:createdWith <https://chowlk.linkeddata.es/> ;
+                               dcterms:title "DigiOnto" ;
+                               dcterms:creator "Grupo 4" ;
+                               owl:versionInfo "1.1.0" ;
+                               dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> .
 #################################################################
 #    Annotation properties
 #################################################################
@@ -179,7 +182,7 @@
 :Digimon rdf:type owl:Class ;
          rdfs:subClassOf [ rdf:type owl:Restriction ;
                            owl:onProperty :learnsMove ;
-                           owl:someValuesFrom owl:Thing
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasAbility ;
