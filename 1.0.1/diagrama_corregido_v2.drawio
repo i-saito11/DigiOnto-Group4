@@ -1,0 +1,146 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2">
+  <diagram name="Chowlk_Final" id="chowlk04">
+    <mxGraphModel dx="1281" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ns_block" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div&gt;&lt;b&gt;ns:&lt;/b&gt; http://example.org/digimon#&lt;/div&gt;&lt;div&gt;&lt;b&gt;xsd:&lt;/b&gt; http://www.w3.org/2001/XMLSchema#&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="290" x="30" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="metadata_block" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;" value="&lt;b&gt;Ontology Metadata&lt;/b&gt;&lt;br&gt;&lt;b&gt;dc:title:&lt;/b&gt; &quot;Digimon Ontology&quot;&lt;br&gt;&lt;b&gt;dc:creator:&lt;/b&gt; &quot;Grupo 4&quot;&lt;br&gt;&lt;b&gt;owl:versionInfo:&lt;/b&gt; &quot;1.1.0&quot;" vertex="1">
+          <mxGeometry height="80" width="220" x="350" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="c_digi" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="ns:Digimon" vertex="1">
+          <mxGeometry height="40" width="120" x="400" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c_stage" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="ns:EvolutionStage" vertex="1">
+          <mxGeometry height="40" width="130" x="400" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c_elem" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="ns:Element" vertex="1">
+          <mxGeometry height="40" width="120" x="750" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_move" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="ns:Move" vertex="1">
+          <mxGeometry height="40" width="120" x="750" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c_support" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="ns:SupportSkill" vertex="1">
+          <mxGeometry height="40" width="120" x="100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c_free" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1" value="ns:FreeDigimon" vertex="1">
+          <mxGeometry height="40" width="120" x="125" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="c_vac" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="ns:VaccineDigimon" vertex="1">
+          <mxGeometry height="40" width="130" x="340" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="c_vir" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" value="ns:VirusDigimon" vertex="1">
+          <mxGeometry height="40" width="120" x="580" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="c_dat" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1" value="ns:DataDigimon" vertex="1">
+          <mxGeometry height="40" width="120" x="660" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="c_phys" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" value="ns:PhysicalMove" vertex="1">
+          <mxGeometry height="40" width="120" x="730" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="c_mag" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1" value="ns:MagicMove" vertex="1">
+          <mxGeometry height="40" width="120" x="950" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="c_sup_m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="ns:SupportMove" vertex="1">
+          <mxGeometry height="40" width="120" x="950" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="dp_digi" parent="1" style="rounded=0;dashed=1;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=5;" value="ns:hp : xsd:integer&amp;#xa;ns:sp : xsd:integer&amp;#xa;ns:atk : xsd:integer&amp;#xa;ns:def : xsd:integer&amp;#xa;ns:int : xsd:integer&amp;#xa;ns:spd : xsd:integer" vertex="1">
+          <mxGeometry height="100" width="140" x="220" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dp_digi" edge="1" parent="1" source="c_digi" style="endArrow=none;html=1;dashed=1;" target="dp_digi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dp_elem" parent="1" style="rounded=0;dashed=1;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=5;" value="ns:elementName : xsd:string" vertex="1">
+          <mxGeometry height="30" width="170" x="910" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dp_elem" edge="1" parent="1" source="c_elem" style="endArrow=none;html=1;dashed=1;" target="dp_elem">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dp_stage" parent="1" style="rounded=0;dashed=1;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=5;" value="ns:stageName : xsd:string" vertex="1">
+          <mxGeometry height="30" width="160" x="190" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dp_stage" edge="1" parent="1" source="c_stage" style="endArrow=none;html=1;dashed=1;" target="dp_stage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dp_move" parent="1" style="rounded=0;dashed=1;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=5;" value="ns:spCost : xsd:integer&amp;#xa;ns:power : xsd:integer&amp;#xa;ns:inheritable : xsd:boolean&amp;#xa;ns:description : xsd:string" vertex="1">
+          <mxGeometry height="70" width="180" x="940" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dp_move" edge="1" parent="1" source="c_move" style="endArrow=none;html=1;dashed=1;" target="dp_move">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dp_supp" parent="1" style="rounded=0;dashed=1;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=5;" value="ns:skillName : xsd:string&amp;#xa;ns:description : xsd:string" vertex="1">
+          <mxGeometry height="40" width="170" x="75" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dp_supp" edge="1" parent="1" source="c_support" style="endArrow=none;html=1;dashed=1;" target="dp_supp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="op_stage" edge="1" parent="1" source="c_digi" style="endArrow=classic;html=1;labelBackgroundColor=#ffffff;" target="c_stage" value="ns:hasEvolutionStage">
+          <mxGeometry relative="1" x="0.4312" y="-7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="op_learns" edge="1" parent="1" source="c_digi" style="endArrow=classic;html=1;labelBackgroundColor=#ffffff;" target="c_move" value="ns:learnsMove">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="op_elem" edge="1" parent="1" source="c_digi" style="endArrow=classic;html=1;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;curved=1;" target="c_elem" value="ns:hasElement">
+          <mxGeometry relative="1" x="0.381" y="-20" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="510" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="op_move_elem" edge="1" parent="1" source="c_move" style="endArrow=classic;html=1;labelBackgroundColor=#ffffff;" target="c_elem" value="ns:hasMoveElement">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="op_support" edge="1" parent="1" source="c_digi" style="endArrow=classic;html=1;labelBackgroundColor=#ffffff;" target="c_support" value="ns:hasSupportSkill">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="op_strong_against" edge="1" parent="1" source="c_digi" style="endArrow=classic;html=1;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;curved=1;" target="c_digi" value="ns:isStrongAgainst">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="250" />
+              <mxPoint x="490" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_free" edge="1" parent="1" source="c_free" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;" target="c_digi" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="630" />
+              <mxPoint x="350" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_vac" edge="1" parent="1" source="c_vac" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;" target="c_digi" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_vir" edge="1" parent="1" source="c_vir" style="endArrow=block;endFill=0;html=1;" target="c_digi" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_dat" edge="1" parent="1" source="c_dat" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;" target="c_digi" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_phys" edge="1" parent="1" source="c_phys" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;" target="c_move" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_mag" edge="1" parent="1" source="c_mag" style="endArrow=block;endFill=0;html=1;" target="c_move" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_sup_m" edge="1" parent="1" source="c_sup_m" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;" target="c_move" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
