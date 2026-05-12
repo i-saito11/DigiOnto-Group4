@@ -1,0 +1,294 @@
+@prefix : <http://example.org/digimon#> .
+@prefix ns: <http://example.org/digimon#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://example.org/digimon#> .
+
+<http://example.org/digimon#> rdf:type owl:Ontology ;
+                               mod:createdWith <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/mod#createdWith
+mod:createdWith rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/digimon#hasElement
+ns:hasElement rdf:type owl:ObjectProperty ;
+              rdfs:domain ns:Digimon ;
+              rdfs:range ns:Element ;
+              rdfs:label "has element" .
+
+
+###  http://example.org/digimon#hasEvolutionStage
+ns:hasEvolutionStage rdf:type owl:ObjectProperty ;
+                     rdfs:domain ns:Digimon ;
+                     rdfs:range ns:EvolutionStage ;
+                     rdfs:label "has evolution stage" .
+
+
+###  http://example.org/digimon#hasMoveElement
+ns:hasMoveElement rdf:type owl:ObjectProperty ;
+                  rdfs:domain ns:Move ;
+                  rdfs:range ns:Element ;
+                  rdfs:label "has move element" .
+
+
+###  http://example.org/digimon#hasSupportSkill
+ns:hasSupportSkill rdf:type owl:ObjectProperty ;
+                   rdfs:domain ns:Digimon ;
+                   rdfs:range ns:SupportSkill ;
+                   rdfs:label "has support skill" .
+
+
+###  http://example.org/digimon#hasType
+ns:hasType rdf:type owl:ObjectProperty ;
+           rdfs:domain ns:Digimon ;
+           rdfs:range ns:Type ;
+           rdfs:label "has type" .
+
+
+###  http://example.org/digimon#isStrongAgainst
+ns:isStrongAgainst rdf:type owl:ObjectProperty ;
+                   rdfs:domain ns:Element ;
+                   rdfs:range ns:Element ;
+                   rdfs:label "is strong against" .
+
+
+###  http://example.org/digimon#isStrongTypeAgainst
+ns:isStrongTypeAgainst rdf:type owl:ObjectProperty ;
+                       rdfs:domain ns:Type ;
+                       rdfs:range ns:Type ;
+                       rdfs:label "is strong type against" .
+
+
+###  http://example.org/digimon#learnsMove
+ns:learnsMove rdf:type owl:ObjectProperty ;
+              rdfs:domain ns:Digimon ;
+              rdfs:range ns:Move ;
+              rdfs:label "learns move" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.org/digimon#atk
+ns:atk rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:integer ;
+       rdfs:label "atk" .
+
+
+###  http://example.org/digimon#def
+ns:def rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:integer ;
+       rdfs:label "def" .
+
+
+###  http://example.org/digimon#description
+ns:description rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:string ;
+               rdfs:label "description" .
+
+
+###  http://example.org/digimon#elementName
+ns:elementName rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:string ;
+               rdfs:label "element name" .
+
+
+###  http://example.org/digimon#hp
+ns:hp rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:integer ;
+      rdfs:label "hp" .
+
+
+###  http://example.org/digimon#inheritable
+ns:inheritable rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:boolean ;
+               rdfs:label "inheritable" .
+
+
+###  http://example.org/digimon#int
+ns:int rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:integer ;
+       rdfs:label "int" .
+
+
+###  http://example.org/digimon#power
+ns:power rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:integer ;
+         rdfs:label "power" .
+
+
+###  http://example.org/digimon#skillName
+ns:skillName rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:string ;
+             rdfs:label "skill name" .
+
+
+###  http://example.org/digimon#sp
+ns:sp rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:integer ;
+      rdfs:label "sp" .
+
+
+###  http://example.org/digimon#spCost
+ns:spCost rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:integer ;
+          rdfs:label "sp cost" .
+
+
+###  http://example.org/digimon#spd
+ns:spd rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:integer ;
+       rdfs:label "spd" .
+
+
+###  http://example.org/digimon#stageName
+ns:stageName rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:string ;
+             rdfs:label "stage name" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.org/digimon#Digimon
+ns:Digimon rdf:type owl:Class ;
+           rdfs:label "Digimon" .
+
+
+###  http://example.org/digimon#Element
+ns:Element rdf:type owl:Class ;
+           rdfs:label "Element" .
+
+
+###  http://example.org/digimon#EvolutionStage
+ns:EvolutionStage rdf:type owl:Class ;
+                  rdfs:label "Evolution Stage" .
+
+
+###  http://example.org/digimon#MagicMove
+ns:MagicMove rdf:type owl:Class ;
+             rdfs:subClassOf ns:Move ;
+             rdfs:label "Magic Move" .
+
+
+###  http://example.org/digimon#Move
+ns:Move rdf:type owl:Class ;
+        rdfs:label "Move" .
+
+
+###  http://example.org/digimon#PhysicalMove
+ns:PhysicalMove rdf:type owl:Class ;
+                rdfs:subClassOf ns:Move ;
+                rdfs:label "Physical Move" .
+
+
+###  http://example.org/digimon#SupportMove
+ns:SupportMove rdf:type owl:Class ;
+               rdfs:subClassOf ns:Move ;
+               rdfs:label "Support Move" .
+
+
+###  http://example.org/digimon#SupportSkill
+ns:SupportSkill rdf:type owl:Class ;
+                rdfs:label "Support Skill" .
+
+
+###  http://example.org/digimon#Type
+ns:Type rdf:type owl:Class ;
+        rdfs:label "Type" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.org/digimon#Dark
+ns:Dark rdf:type owl:NamedIndividual ,
+                 ns:Element ;
+        ns:isStrongAgainst ns:Light .
+
+
+###  http://example.org/digimon#Data
+ns:Data rdf:type owl:NamedIndividual ,
+                 ns:Type .
+
+
+###  http://example.org/digimon#Earth
+ns:Earth rdf:type owl:NamedIndividual ,
+                  ns:Element ;
+         ns:isStrongTypeAgainst ns:Electric .
+
+
+###  http://example.org/digimon#Electric
+ns:Electric rdf:type owl:NamedIndividual ,
+                     ns:Element .
+
+
+###  http://example.org/digimon#Fire
+ns:Fire rdf:type owl:NamedIndividual ,
+                 ns:Element .
+
+
+###  http://example.org/digimon#Free
+ns:Free rdf:type owl:NamedIndividual ,
+                 ns:Type .
+
+
+###  http://example.org/digimon#Light
+ns:Light rdf:type owl:NamedIndividual ,
+                  ns:Element .
+
+
+###  http://example.org/digimon#Plant
+ns:Plant rdf:type owl:NamedIndividual ,
+                  ns:Element .
+
+
+###  http://example.org/digimon#Vaccine
+ns:Vaccine rdf:type owl:NamedIndividual ,
+                    ns:Type .
+
+
+###  http://example.org/digimon#Virus
+ns:Virus rdf:type owl:NamedIndividual ,
+                  ns:Type .
+
+
+###  http://example.org/digimon#Water
+ns:Water rdf:type owl:NamedIndividual ,
+                  ns:Element .
+
+
+###  http://example.org/digimon#Wind
+ns:Wind rdf:type owl:NamedIndividual ,
+                 ns:Element .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( ns:MagicMove
+                ns:PhysicalMove
+                ns:SupportMove
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

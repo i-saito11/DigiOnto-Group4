@@ -1,0 +1,495 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://example.org/digimon#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://example.org/digimon#">
+    <Prefix name="ns" IRI="http://example.org/digimon#"/>
+    <Prefix name="mod" IRI="https://w3id.org/mod#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="mod:createdWith"/>
+        <IRI>https://chowlk.linkeddata.es/</IRI>
+    </Annotation>
+    <Declaration>
+        <Class IRI="Digimon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Element"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EvolutionStage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MagicMove"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Move"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PhysicalMove"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SupportMove"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SupportSkill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasElement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEvolutionStage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMoveElement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSupportSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isStrongAgainst"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isStrongTypeAgainst"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="learnsMove"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="atk"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="def"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="elementName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="inheritable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="int"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="power"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="skillName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="sp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="spCost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="spd"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="stageName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Dark"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Data"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Earth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Electric"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Fire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Free"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Light"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Plant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Vaccine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Virus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Water"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Wind"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="mod:createdWith"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="MagicMove"/>
+        <Class IRI="Move"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PhysicalMove"/>
+        <Class IRI="Move"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SupportMove"/>
+        <Class IRI="Move"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="MagicMove"/>
+        <Class IRI="PhysicalMove"/>
+        <Class IRI="SupportMove"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="Element"/>
+        <NamedIndividual IRI="Dark"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Type"/>
+        <NamedIndividual IRI="Data"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Element"/>
+        <NamedIndividual IRI="Earth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Element"/>
+        <NamedIndividual IRI="Electric"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Element"/>
+        <NamedIndividual IRI="Fire"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Type"/>
+        <NamedIndividual IRI="Free"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Element"/>
+        <NamedIndividual IRI="Light"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Element"/>
+        <NamedIndividual IRI="Plant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Type"/>
+        <NamedIndividual IRI="Vaccine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Type"/>
+        <NamedIndividual IRI="Virus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Element"/>
+        <NamedIndividual IRI="Water"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Element"/>
+        <NamedIndividual IRI="Wind"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isStrongAgainst"/>
+        <NamedIndividual IRI="Dark"/>
+        <NamedIndividual IRI="Light"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isStrongTypeAgainst"/>
+        <NamedIndividual IRI="Earth"/>
+        <NamedIndividual IRI="Electric"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasElement"/>
+        <Class IRI="Digimon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEvolutionStage"/>
+        <Class IRI="Digimon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMoveElement"/>
+        <Class IRI="Move"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSupportSkill"/>
+        <Class IRI="Digimon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasType"/>
+        <Class IRI="Digimon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isStrongAgainst"/>
+        <Class IRI="Element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isStrongTypeAgainst"/>
+        <Class IRI="Type"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="learnsMove"/>
+        <Class IRI="Digimon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasElement"/>
+        <Class IRI="Element"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEvolutionStage"/>
+        <Class IRI="EvolutionStage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMoveElement"/>
+        <Class IRI="Element"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSupportSkill"/>
+        <Class IRI="SupportSkill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasType"/>
+        <Class IRI="Type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isStrongAgainst"/>
+        <Class IRI="Element"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isStrongTypeAgainst"/>
+        <Class IRI="Type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="learnsMove"/>
+        <Class IRI="Move"/>
+    </ObjectPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="atk"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="def"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="elementName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hp"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="inheritable"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="int"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="power"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="skillName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="sp"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="spCost"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="spd"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="stageName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Digimon</IRI>
+        <Literal>Digimon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Element</IRI>
+        <Literal>Element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EvolutionStage</IRI>
+        <Literal>Evolution Stage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MagicMove</IRI>
+        <Literal>Magic Move</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Move</IRI>
+        <Literal>Move</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PhysicalMove</IRI>
+        <Literal>Physical Move</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SupportMove</IRI>
+        <Literal>Support Move</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SupportSkill</IRI>
+        <Literal>Support Skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Type</IRI>
+        <Literal>Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>atk</IRI>
+        <Literal>atk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>def</IRI>
+        <Literal>def</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>description</IRI>
+        <Literal>description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>elementName</IRI>
+        <Literal>element name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasElement</IRI>
+        <Literal>has element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasEvolutionStage</IRI>
+        <Literal>has evolution stage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMoveElement</IRI>
+        <Literal>has move element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSupportSkill</IRI>
+        <Literal>has support skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasType</IRI>
+        <Literal>has type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hp</IRI>
+        <Literal>hp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>inheritable</IRI>
+        <Literal>inheritable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>int</IRI>
+        <Literal>int</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isStrongAgainst</IRI>
+        <Literal>is strong against</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isStrongTypeAgainst</IRI>
+        <Literal>is strong type against</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>learnsMove</IRI>
+        <Literal>learns move</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>power</IRI>
+        <Literal>power</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>skillName</IRI>
+        <Literal>skill name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>sp</IRI>
+        <Literal>sp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>spCost</IRI>
+        <Literal>sp cost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>spd</IRI>
+        <Literal>spd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>stageName</IRI>
+        <Literal>stage name</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
