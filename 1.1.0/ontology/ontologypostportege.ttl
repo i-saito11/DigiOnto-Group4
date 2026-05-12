@@ -305,11 +305,39 @@
 :Type rdf:type owl:Class ;
       rdfs:label "Type" .
 
+### Disjoint subclasses of Move
+[] rdf:type owl:AllDisjointClasses ;
+   owl:members ( :PhysicalMove :MagicMove :SupportMove ) .
 
-###  http://example.org/digimon#PhysicalMove,MagicMoveandSupportMovearedisjointsubclassesofMove
-<http://example.org/digimon#PhysicalMove,MagicMoveandSupportMovearedisjointsubclassesofMove> rdf:type owl:Class ;
-                                                                                             rdfs:label "Physical Move, Magic Moveand Support Movearedisjointsubclassesof Move" .
+### AllDifferent individuals of Type
+[] rdf:type owl:AllDifferent ;
+   owl:distinctMembers (
+       <http://webprotege.stanford.edu/R7k6bEJn3XkvQMjNQp6P84T>
+       <http://webprotege.stanford.edu/RCrvqSY7VcpEGQl9PhCHTFZ>
+       <http://webprotege.stanford.edu/RGgN2VDZTQl8L6W3UgjjpD>
+       <http://webprotege.stanford.edu/RHo0lAUUbx2meHHO1Vqfh5>
+   ) .
 
+### AllDifferent individuals of EvolutionStage
+[] rdf:type owl:AllDifferent ;
+   owl:distinctMembers (
+       <http://webprotege.stanford.edu/RDxTo0htnRTJVefTiS61EDr>
+       <http://webprotege.stanford.edu/RBLhRXcnf6a3Rg6AEQLaRpX>
+       <http://webprotege.stanford.edu/R857jLggz9t8Rmp9OVtmwZb>
+       <http://webprotege.stanford.edu/R82k32FzX1zRORbCsZyvfq0>
+       <http://webprotege.stanford.edu/RV6AhoZrE5ymFBjxZYjDZk>
+   ) .
+
+### AllDifferent individuals of Element
+[] rdf:type owl:AllDifferent ;
+   owl:distinctMembers (
+       <http://webprotege.stanford.edu/R9iJ3UXiJkTcme9haMiht2u>
+       <http://webprotege.stanford.edu/Rmk6YThaPgE2LGDWDtlutd>
+       <http://webprotege.stanford.edu/R7VTEsvmouMBS0Zm0t1ordY>
+       <http://webprotege.stanford.edu/RBncgnz4JTYjQwEUgCcfWR7>
+       <http://webprotege.stanford.edu/RDTShA3mCW5PScvEWYwAlJ2>
+       <http://webprotege.stanford.edu/RBUwZEN98OhcE7ObfmLmfNo>
+   ) .
 
 ###  http://webprotege.stanford.edu/R7VTEsvmouMBS0Zm0t1ordY
 <http://webprotege.stanford.edu/R7VTEsvmouMBS0Zm0t1ordY> rdf:type owl:Class ;
