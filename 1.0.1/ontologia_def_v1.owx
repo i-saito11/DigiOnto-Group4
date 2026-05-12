@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://example.org/digimon#"
+     xml:base="http://example.org/digiOntoG4"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://example.org/digimon#">
+     ontologyIRI="http://example.org/digiOntoG4">
+    <Prefix name="" IRI="http://example.org/digimon#"/>
     <Prefix name="ns" IRI="http://example.org/digimon#"/>
     <Prefix name="mod" IRI="https://w3id.org/mod#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -217,9 +218,54 @@
         <NamedIndividual IRI="Light"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isStrongAgainst"/>
+        <NamedIndividual IRI="Data"/>
+        <NamedIndividual IRI="Vaccine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="isStrongTypeAgainst"/>
         <NamedIndividual IRI="Earth"/>
         <NamedIndividual IRI="Electric"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isStrongTypeAgainst"/>
+        <NamedIndividual IRI="Electric"/>
+        <NamedIndividual IRI="Wind"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isStrongTypeAgainst"/>
+        <NamedIndividual IRI="Fire"/>
+        <NamedIndividual IRI="Plant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isStrongTypeAgainst"/>
+        <NamedIndividual IRI="Light"/>
+        <NamedIndividual IRI="Dark"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isStrongTypeAgainst"/>
+        <NamedIndividual IRI="Plant"/>
+        <NamedIndividual IRI="Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isStrongAgainst"/>
+        <NamedIndividual IRI="Vaccine"/>
+        <NamedIndividual IRI="Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isStrongAgainst"/>
+        <NamedIndividual IRI="Virus"/>
+        <NamedIndividual IRI="Data"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isStrongTypeAgainst"/>
+        <NamedIndividual IRI="Water"/>
+        <NamedIndividual IRI="Fire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isStrongTypeAgainst"/>
+        <NamedIndividual IRI="Wind"/>
+        <NamedIndividual IRI="Earth"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasElement"/>
