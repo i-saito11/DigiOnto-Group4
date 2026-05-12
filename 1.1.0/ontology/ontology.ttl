@@ -1,0 +1,214 @@
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://example.org/digimon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns: a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+<http://example.org/digimon#MagicMove> a owl:Class ;
+    rdfs:label "Magic Move" ;
+    rdfs:subClassOf <http://example.org/digimon#Move> .
+
+<http://example.org/digimon#PhysicalMove> a owl:Class ;
+    rdfs:label "Physical Move" ;
+    rdfs:subClassOf <http://example.org/digimon#Move> .
+
+<http://example.org/digimon#PhysicalMove,MagicMoveandSupportMovearedisjointsubclassesofMove> a owl:Class ;
+    rdfs:label "Physical Move, Magic Moveand Support Movearedisjointsubclassesof Move" .
+
+<http://example.org/digimon#SupportMove> a owl:Class ;
+    rdfs:label "Support Move" ;
+    rdfs:subClassOf <http://example.org/digimon#Move> .
+
+<http://example.org/digimon#learnsMove> a owl:ObjectProperty ;
+    rdfs:label "learns move" ;
+    rdfs:domain <http://example.org/digimon#Digimon> ;
+    rdfs:range <http://example.org/digimon#Move> .
+
+<http://example.org/digimon#strongAgainst> a owl:ObjectProperty ;
+    rdfs:label "strong against" .
+
+<http://example.org/digimon#Ability> a owl:Class ;
+    rdfs:label "Ability" .
+
+<http://example.org/digimon#EvolutionStage> a owl:Class ;
+    rdfs:label "Evolution Stage" .
+
+<http://example.org/digimon#Type> a owl:Class ;
+    rdfs:label "Type" .
+
+<http://example.org/digimon#hasAbility> a owl:ObjectProperty ;
+    rdfs:label "has ability" ;
+    rdfs:domain <http://example.org/digimon#Digimon> ;
+    rdfs:range <http://example.org/digimon#Ability> .
+
+<http://example.org/digimon#hasAttack> a owl:ObjectProperty ;
+    rdfs:label "has attack" ;
+    rdfs:domain <http://example.org/digimon#Digimon> ;
+    rdfs:range xsd:integer .
+
+<http://example.org/digimon#hasDefense> a owl:ObjectProperty ;
+    rdfs:label "has defense" ;
+    rdfs:domain <http://example.org/digimon#Digimon> ;
+    rdfs:range xsd:integer .
+
+<http://example.org/digimon#hasDescription> a owl:ObjectProperty ;
+    rdfs:label "has description" ;
+    rdfs:domain <http://example.org/digimon#Move> ;
+    rdfs:range xsd:string .
+
+<http://example.org/digimon#hasElement> a owl:ObjectProperty ;
+    rdfs:label "has element" ;
+    rdfs:domain <http://example.org/digimon#Digimon> ;
+    rdfs:range <http://example.org/digimon#Element> .
+
+<http://example.org/digimon#hasEquipSlots> a owl:ObjectProperty ;
+    rdfs:label "has equip slots" ;
+    rdfs:domain <http://example.org/digimon#Digimon> ;
+    rdfs:range xsd:integer .
+
+<http://example.org/digimon#hasHP> a owl:ObjectProperty ;
+    rdfs:label "has h p" ;
+    rdfs:domain <http://example.org/digimon#Digimon> ;
+    rdfs:range xsd:integer .
+
+<http://example.org/digimon#hasInheritable> a owl:ObjectProperty ;
+    rdfs:label "has inheritable" ;
+    rdfs:domain <http://example.org/digimon#Move> ;
+    rdfs:range xsd:boolean .
+
+<http://example.org/digimon#hasInteligence> a owl:ObjectProperty ;
+    rdfs:label "has inteligence" ;
+    rdfs:domain <http://example.org/digimon#Digimon> ;
+    rdfs:range xsd:integer .
+
+<http://example.org/digimon#hasMoveElement> a owl:ObjectProperty ;
+    rdfs:label "has move element" ;
+    rdfs:domain <http://example.org/digimon#Move> ;
+    rdfs:range <http://example.org/digimon#Element> .
+
+<http://example.org/digimon#hasPower> a owl:ObjectProperty ;
+    rdfs:label "has power" ;
+    rdfs:domain <http://example.org/digimon#Move> ;
+    rdfs:range xsd:integer .
+
+<http://example.org/digimon#hasSP> a owl:ObjectProperty ;
+    rdfs:label "has s p" ;
+    rdfs:domain <http://example.org/digimon#Digimon> ;
+    rdfs:range xsd:integer .
+
+<http://example.org/digimon#hasSPCost> a owl:ObjectProperty ;
+    rdfs:label "has s p cost" ;
+    rdfs:domain <http://example.org/digimon#Move> ;
+    rdfs:range xsd:integer .
+
+<http://example.org/digimon#hasSkillDescription> a owl:ObjectProperty ;
+    rdfs:label "has skill description" ;
+    rdfs:domain <http://example.org/digimon#SupportSkill> ;
+    rdfs:range xsd:string .
+
+<http://example.org/digimon#hasSkillName> a owl:ObjectProperty ;
+    rdfs:label "has skill name" ;
+    rdfs:domain <http://example.org/digimon#SupportSkill> ;
+    rdfs:range xsd:string .
+
+<http://example.org/digimon#hasSpeed> a owl:ObjectProperty ;
+    rdfs:label "has speed" ;
+    rdfs:domain <http://example.org/digimon#Digimon> ;
+    rdfs:range xsd:integer .
+
+<http://example.org/digimon#hasStage> a owl:ObjectProperty ;
+    rdfs:label "has stage" ;
+    rdfs:domain <http://example.org/digimon#Digimon> ;
+    rdfs:range <http://example.org/digimon#EvolutionStage> .
+
+<http://example.org/digimon#hasSupportSkill> a owl:ObjectProperty ;
+    rdfs:label "has support skill" ;
+    rdfs:domain <http://example.org/digimon#Digimon> ;
+    rdfs:range <http://example.org/digimon#SupportSkill> .
+
+<http://example.org/digimon#hasType> a owl:ObjectProperty ;
+    rdfs:label "has type" ;
+    rdfs:domain <http://example.org/digimon#Digimon> ;
+    rdfs:range <http://example.org/digimon#Type> .
+
+xsd:boolean a owl:Class ;
+    rdfs:label "boolean" .
+
+<http://example.org/digimon#Element> a owl:Class ;
+    rdfs:label "Element" .
+
+<http://example.org/digimon#SupportSkill> a owl:Class ;
+    rdfs:label "Support Skill" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasSkillName> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasSkillDescription> ] .
+
+xsd:string a owl:Class ;
+    rdfs:label "string" .
+
+<http://example.org/digimon#Move> a owl:Class ;
+    rdfs:label "Move" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasMoveElement> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasDescription> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasSPCost> ],
+        [ a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasPower> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasInheritable> ] .
+
+xsd:integer a owl:Class ;
+    rdfs:label "integer" .
+
+<http://example.org/digimon#Digimon> a owl:Class ;
+    rdfs:label "Digimon" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasType> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasSP> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasSpeed> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasDefense> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasElement> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasStage> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasAbility> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasSupportSkill> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasHP> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasAttack> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasEquipSlots> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <http://example.org/digimon#hasInteligence> ] .
+

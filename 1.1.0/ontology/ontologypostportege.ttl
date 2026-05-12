@@ -1,0 +1,428 @@
+@prefix : <http://example.org/digimon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://example.org/digimon#> .
+
+<http://example.org/digimon#> rdf:type owl:Ontology ;
+                               <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/digimon#hasAbility
+:hasAbility rdf:type owl:ObjectProperty ;
+            rdfs:domain :Digimon ;
+            rdfs:range :Ability ;
+            rdfs:label "has ability" .
+
+
+###  http://example.org/digimon#hasAttack
+:hasAttack rdf:type owl:ObjectProperty ;
+           rdfs:domain :Digimon ;
+           rdfs:range xsd:integer ;
+           rdfs:label "has attack" .
+
+
+###  http://example.org/digimon#hasDefense
+:hasDefense rdf:type owl:ObjectProperty ;
+            rdfs:domain :Digimon ;
+            rdfs:range xsd:integer ;
+            rdfs:label "has defense" .
+
+
+###  http://example.org/digimon#hasDescription
+:hasDescription rdf:type owl:ObjectProperty ;
+                rdfs:domain :Move ;
+                rdfs:range xsd:string ;
+                rdfs:label "has description" .
+
+
+###  http://example.org/digimon#hasElement
+:hasElement rdf:type owl:ObjectProperty ;
+            rdfs:domain :Digimon ;
+            rdfs:range :Element ;
+            rdfs:label "has element" .
+
+
+###  http://example.org/digimon#hasEquipSlots
+:hasEquipSlots rdf:type owl:ObjectProperty ;
+               rdfs:domain :Digimon ;
+               rdfs:range xsd:integer ;
+               rdfs:label "has equip slots" .
+
+
+###  http://example.org/digimon#hasHP
+:hasHP rdf:type owl:ObjectProperty ;
+       rdfs:domain :Digimon ;
+       rdfs:range xsd:integer ;
+       rdfs:label "has h p" .
+
+
+###  http://example.org/digimon#hasInheritable
+:hasInheritable rdf:type owl:ObjectProperty ;
+                rdfs:domain :Move ;
+                rdfs:range xsd:boolean ;
+                rdfs:label "has inheritable" .
+
+
+###  http://example.org/digimon#hasInteligence
+:hasInteligence rdf:type owl:ObjectProperty ;
+                rdfs:domain :Digimon ;
+                rdfs:range xsd:integer ;
+                rdfs:label "has inteligence" .
+
+
+###  http://example.org/digimon#hasMoveElement
+:hasMoveElement rdf:type owl:ObjectProperty ;
+                rdfs:domain :Move ;
+                rdfs:range :Element ;
+                rdfs:label "has move element" .
+
+
+###  http://example.org/digimon#hasPower
+:hasPower rdf:type owl:ObjectProperty ;
+          rdfs:domain :Move ;
+          rdfs:range xsd:integer ;
+          rdfs:label "has power" .
+
+
+###  http://example.org/digimon#hasSP
+:hasSP rdf:type owl:ObjectProperty ;
+       rdfs:domain :Digimon ;
+       rdfs:range xsd:integer ;
+       rdfs:label "has s p" .
+
+
+###  http://example.org/digimon#hasSPCost
+:hasSPCost rdf:type owl:ObjectProperty ;
+           rdfs:domain :Move ;
+           rdfs:range xsd:integer ;
+           rdfs:label "has s p cost" .
+
+
+###  http://example.org/digimon#hasSkillDescription
+:hasSkillDescription rdf:type owl:ObjectProperty ;
+                     rdfs:domain :SupportSkill ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "has skill description" .
+
+
+###  http://example.org/digimon#hasSkillName
+:hasSkillName rdf:type owl:ObjectProperty ;
+              rdfs:domain :SupportSkill ;
+              rdfs:range xsd:string ;
+              rdfs:label "has skill name" .
+
+
+###  http://example.org/digimon#hasSpeed
+:hasSpeed rdf:type owl:ObjectProperty ;
+          rdfs:domain :Digimon ;
+          rdfs:range xsd:integer ;
+          rdfs:label "has speed" .
+
+
+###  http://example.org/digimon#hasStage
+:hasStage rdf:type owl:ObjectProperty ;
+          rdfs:domain :Digimon ;
+          rdfs:range :EvolutionStage ;
+          rdfs:label "has stage" .
+
+
+###  http://example.org/digimon#hasSupportSkill
+:hasSupportSkill rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Digimon ;
+                 rdfs:range :SupportSkill ;
+                 rdfs:label "has support skill" .
+
+
+###  http://example.org/digimon#hasType
+:hasType rdf:type owl:ObjectProperty ;
+         rdfs:domain :Digimon ;
+         rdfs:range :Type ;
+         rdfs:label "has type" .
+
+
+###  http://example.org/digimon#learnsMove
+:learnsMove rdf:type owl:ObjectProperty ;
+            rdfs:domain :Digimon ;
+            rdfs:range :Move ;
+            rdfs:label "learns move" .
+
+
+###  http://example.org/digimon#strongAgainst
+:strongAgainst rdf:type owl:ObjectProperty ;
+               rdfs:label "strong against" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.org/digimon#Ability
+:Ability rdf:type owl:Class ;
+         rdfs:label "Ability" .
+
+
+###  http://example.org/digimon#Digimon
+:Digimon rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :learnsMove ;
+                           owl:someValuesFrom owl:Thing
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasAbility ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasAttack ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasDefense ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasElement ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasEquipSlots ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasHP ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasInteligence ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasSP ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasSpeed ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasStage ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasSupportSkill ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasType ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ;
+         rdfs:label "Digimon" .
+
+
+###  http://example.org/digimon#Element
+:Element rdf:type owl:Class ;
+         rdfs:label "Element" .
+
+
+###  http://example.org/digimon#EvolutionStage
+:EvolutionStage rdf:type owl:Class ;
+                rdfs:label "Evolution Stage" .
+
+
+###  http://example.org/digimon#MagicMove
+:MagicMove rdf:type owl:Class ;
+           rdfs:subClassOf :Move ;
+           rdfs:label "Magic Move" .
+
+
+###  http://example.org/digimon#Move
+:Move rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasDescription ;
+                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasInheritable ;
+                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasMoveElement ;
+                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasSPCost ;
+                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasPower ;
+                        owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                      ] ;
+      rdfs:label "Move" .
+
+
+###  http://example.org/digimon#PhysicalMove
+:PhysicalMove rdf:type owl:Class ;
+              rdfs:subClassOf :Move ;
+              rdfs:label "Physical Move" .
+
+
+###  http://example.org/digimon#SupportMove
+:SupportMove rdf:type owl:Class ;
+             rdfs:subClassOf :Move ;
+             rdfs:label "Support Move" .
+
+
+###  http://example.org/digimon#SupportSkill
+:SupportSkill rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasSkillDescription ;
+                                owl:cardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasSkillName ;
+                                owl:cardinality "1"^^xsd:nonNegativeInteger
+                              ] ;
+              rdfs:label "Support Skill" .
+
+
+###  http://example.org/digimon#Type
+:Type rdf:type owl:Class ;
+      rdfs:label "Type" .
+
+
+###  http://example.org/digimon#PhysicalMove,MagicMoveandSupportMovearedisjointsubclassesofMove
+<http://example.org/digimon#PhysicalMove,MagicMoveandSupportMovearedisjointsubclassesofMove> rdf:type owl:Class ;
+                                                                                             rdfs:label "Physical Move, Magic Moveand Support Movearedisjointsubclassesof Move" .
+
+
+###  http://webprotege.stanford.edu/R7VTEsvmouMBS0Zm0t1ordY
+<http://webprotege.stanford.edu/R7VTEsvmouMBS0Zm0t1ordY> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Element ;
+                                                         rdfs:label "Plant" .
+
+
+###  http://webprotege.stanford.edu/R7k6bEJn3XkvQMjNQp6P84T
+<http://webprotege.stanford.edu/R7k6bEJn3XkvQMjNQp6P84T> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Type ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :strongAgainst ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/RGgN2VDZTQl8L6W3UgjjpD>
+                                                                         ] ;
+                                                         rdfs:label "Virus" .
+
+
+###  http://webprotege.stanford.edu/R82k32FzX1zRORbCsZyvfq0
+<http://webprotege.stanford.edu/R82k32FzX1zRORbCsZyvfq0> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :EvolutionStage ;
+                                                         rdfs:label "Ultimate" .
+
+
+###  http://webprotege.stanford.edu/R857jLggz9t8Rmp9OVtmwZb
+<http://webprotege.stanford.edu/R857jLggz9t8Rmp9OVtmwZb> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :EvolutionStage ;
+                                                         rdfs:label "Champion" .
+
+
+###  http://webprotege.stanford.edu/R9iJ3UXiJkTcme9haMiht2u
+<http://webprotege.stanford.edu/R9iJ3UXiJkTcme9haMiht2u> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Element ;
+                                                         rdfs:label "Fire" .
+
+
+###  http://webprotege.stanford.edu/RBLhRXcnf6a3Rg6AEQLaRpX
+<http://webprotege.stanford.edu/RBLhRXcnf6a3Rg6AEQLaRpX> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :EvolutionStage ;
+                                                         rdfs:label "Rookie" .
+
+
+###  http://webprotege.stanford.edu/RBUwZEN98OhcE7ObfmLmfNo
+<http://webprotege.stanford.edu/RBUwZEN98OhcE7ObfmLmfNo> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Element ;
+                                                         rdfs:label "Dark" .
+
+
+###  http://webprotege.stanford.edu/RBncgnz4JTYjQwEUgCcfWR7
+<http://webprotege.stanford.edu/RBncgnz4JTYjQwEUgCcfWR7> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Element ;
+                                                         rdfs:label "Electric" .
+
+
+###  http://webprotege.stanford.edu/RCrvqSY7VcpEGQl9PhCHTFZ
+<http://webprotege.stanford.edu/RCrvqSY7VcpEGQl9PhCHTFZ> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Type ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :strongAgainst ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R7k6bEJn3XkvQMjNQp6P84T>
+                                                                         ] ;
+                                                         rdfs:label "Vaccine" .
+
+
+###  http://webprotege.stanford.edu/RDTShA3mCW5PScvEWYwAlJ2
+<http://webprotege.stanford.edu/RDTShA3mCW5PScvEWYwAlJ2> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Element ;
+                                                         rdfs:label "Light" .
+
+
+###  http://webprotege.stanford.edu/RDxTo0htnRTJVefTiS61EDr
+<http://webprotege.stanford.edu/RDxTo0htnRTJVefTiS61EDr> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :EvolutionStage ;
+                                                         rdfs:label "Baby" .
+
+
+###  http://webprotege.stanford.edu/RGgN2VDZTQl8L6W3UgjjpD
+<http://webprotege.stanford.edu/RGgN2VDZTQl8L6W3UgjjpD> rdf:type owl:Class ;
+                                                        rdfs:subClassOf :Type ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :strongAgainst ;
+                                                                          owl:someValuesFrom <http://webprotege.stanford.edu/RCrvqSY7VcpEGQl9PhCHTFZ>
+                                                                        ] ;
+                                                        rdfs:label "Data" .
+
+
+###  http://webprotege.stanford.edu/RHo0lAUUbx2meHHO1Vqfh5
+<http://webprotege.stanford.edu/RHo0lAUUbx2meHHO1Vqfh5> rdf:type owl:Class ;
+                                                        rdfs:subClassOf :Type ;
+                                                        rdfs:label "FreeType" .
+
+
+###  http://webprotege.stanford.edu/RV6AhoZrE5ymFBjxZYjDZk
+<http://webprotege.stanford.edu/RV6AhoZrE5ymFBjxZYjDZk> rdf:type owl:Class ;
+                                                        rdfs:subClassOf :EvolutionStage ;
+                                                        rdfs:label "Mega" .
+
+
+###  http://webprotege.stanford.edu/Rmk6YThaPgE2LGDWDtlutd
+<http://webprotege.stanford.edu/Rmk6YThaPgE2LGDWDtlutd> rdf:type owl:Class ;
+                                                        rdfs:subClassOf :Element ;
+                                                        rdfs:label "Water" .
+
+
+###  http://www.w3.org/2001/XMLSchema#boolean
+xsd:boolean rdf:type owl:Class ;
+            rdfs:label "boolean" .
+
+
+###  http://www.w3.org/2001/XMLSchema#integer
+xsd:integer rdf:type owl:Class ;
+            rdfs:label "integer" .
+
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdf:type owl:Class ;
+           rdfs:label "string" .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
