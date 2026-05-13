@@ -1,0 +1,67 @@
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:InConstraintComponent ;
+	sh:sourceShape _:n126 ;
+	sh:focusNode <http://example.org/digiOntoG4ErrorMon_Type> ;
+	sh:value <http://example.org/digiOntoG4MagicType> ;
+	sh:resultPath <http://example.org/digiOntoG4hasType> ;
+	sh:resultMessage "Error Semántico: El tipo debe ser uno de los valores permitidos: Vaccine, Virus, Data o Free." ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+	sh:sourceShape _:n125 ;
+	sh:focusNode <http://example.org/digiOntoG4ErrorMon_NoStage> ;
+	sh:resultPath <http://example.org/digiOntoG4hasEvolutionStage> ;
+	sh:resultMessage "Error de Cardinalidad: Se requiere exactamente una etapa evolutiva definida." ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+	sh:sourceShape _:n131 ;
+	sh:focusNode <http://example.org/digiOntoG4ErrorMon_Stats> ;
+	sh:value "Muy alto" ;
+	sh:resultPath <http://example.org/digiOntoG4hp> ;
+	sh:resultMessage "Error de Datos: Los puntos de salud (HP) deben ser un valor entero no negativo." ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
+	sh:sourceShape _:n131 ;
+	sh:focusNode <http://example.org/digiOntoG4ErrorMon_Stats> ;
+	sh:value "Muy alto" ;
+	sh:resultPath <http://example.org/digiOntoG4hp> ;
+	sh:resultMessage "Error de Datos: Los puntos de salud (HP) deben ser un valor entero no negativo." ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
+	sh:sourceShape _:n136 ;
+	sh:focusNode <http://example.org/digiOntoG4ErrorMon_Stats> ;
+	sh:value -10 ;
+	sh:resultPath <http://example.org/digiOntoG4spd> ;
+	sh:resultMessage "Error de Datos: La velocidad (SPD) debe ser un valor entero no negativo." ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+	sh:sourceShape _:n137 ;
+	sh:focusNode <http://example.org/digiOntoG4ErrorMove_Nocost> ;
+	sh:resultPath <http://example.org/digiOntoG4spCost> ;
+	sh:resultMessage "Todo movimiento debe especificar un coste de SP entero no negativo." ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+	sh:sourceShape _:n143 ;
+	sh:focusNode <http://example.org/digiOntoG4ErrorSupport_NoDesc> ;
+	sh:resultPath <http://example.org/digiOntoG4description> ;
+	sh:resultMessage "Una habilidad de soporte debe tener una descripción." ;
+] .
