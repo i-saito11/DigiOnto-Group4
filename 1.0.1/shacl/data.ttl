@@ -1,0 +1,90 @@
+@prefix ns:   <http://example.org/digiOntoG4> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ns:Rookie a ns:EvolutionStage .
+ns:Champion a ns:EvolutionStage .
+
+ns:Fire a ns:Element .
+ns:Light a ns:Element .
+ns:Dark a ns:Element .
+ns:Neutral a ns:Element .
+ns:Water a ns:Element .
+ns:Plant a ns:Element .
+ns:Earth a ns:Element .
+
+ns:Vaccine a ns:Type .
+ns:Virus a ns:Type .
+ns:Data a ns:Type .
+ns:Free a ns:Type .
+
+ns:AgumonSupport a ns:SupportSkill ;
+    ns:skillName "Aumento de ataque" ;
+    ns:description "Mejora el ataque del Digimon durante el combate." .
+
+ns:Agumon a ns:Digimon ;
+    ns:hasEvolutionStage ns:Rookie ;
+    ns:hasType ns:Vaccine ;
+    ns:hasElement ns:Fire ;
+    ns:hasSupportSkill ns:AgumonSupport ;
+    ns:hp 1050 ;
+    ns:sp 80 ;
+    ns:atk 120 ;
+    ns:def 90 ;
+    ns:int 70 ;
+    ns:spd 25 ;
+    ns:learnsMove ns:WolkenapalmI .
+
+ns:WolkenapalmI a ns:Move ;
+    ns:spCost 3 ;
+    ns:power 65 ;
+    ns:inheritable true ;
+    ns:description "Ataque de fuego básico." ;
+    ns:hasMoveElement ns:Fire .
+
+ns:ErrorMon_Type a ns:Digimon ;
+    ns:hasEvolutionStage ns:Champion ;
+    ns:hasType ns:MagicType ; # ERROR: No es uno de los tipos permitidos
+    ns:hasElement ns:Neutral ;
+    ns:hasSupportSkill ns:AgumonSupport ;
+    ns:hp 500 ;
+    ns:sp 50 ;
+    ns:atk 70 ;
+    ns:def 60 ;
+    ns:int 40 ;
+    ns:spd 20 ;
+    ns:learnsMove ns:WolkenapalmI .
+
+ns:ErrorMon_NoStage a ns:Digimon ;
+    ns:hasType ns:Data ;
+    ns:hasElement ns:Water ;
+    ns:hasSupportSkill ns:AgumonSupport ;
+    ns:hp 800 ;
+    ns:sp 60 ;
+    ns:atk 80 ;
+    ns:def 75 ;
+    ns:int 50 ;
+    ns:spd 30 ;
+    ns:learnsMove ns:WolkenapalmI . # ERROR: Falta hasEvolutionStage
+
+ns:ErrorMon_Stats a ns:Digimon ;
+    ns:hasEvolutionStage ns:Rookie ;
+    ns:hasType ns:Virus ;
+    ns:hasElement ns:Dark ;
+    ns:hasSupportSkill ns:AgumonSupport ;
+    ns:hp "Muy alto" ; # ERROR: Se esperaba xsd:integer
+    ns:sp 70 ;
+    ns:atk 100 ;
+    ns:def 80 ;
+    ns:int 60 ;
+    ns:spd -10 ;      # ERROR: Violación de sh:minInclusive 0
+    ns:learnsMove ns:WolkenapalmI .
+
+ns:ErrorMove_Nocost a ns:Move ;
+    ns:power 50 ;
+    ns:inheritable true ;
+    ns:description "Movimiento sin coste de SP." ;
+    ns:hasMoveElement ns:Dark . # ERROR: Falta spCost
+
+ns:ErrorSupport_NoDesc a ns:SupportSkill ;
+    ns:skillName "Soporte incompleto" . # ERROR: Falta description
