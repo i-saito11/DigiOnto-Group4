@@ -10,7 +10,7 @@ ns:DigimonShape
     rdfs:comment "Asegura que cada Digimon cumpla con etapa, tipo, elemento, movimientos, habilidad de soporte y atributos base." ;
     sh:targetClass ns:Digimon ;
     sh:nodeKind sh:IRI ;
-
+    # Req-20
     sh:property [
         sh:path ns:hasEvolutionStage ;
         sh:name "Etapa Evolutiva" ;
@@ -20,7 +20,7 @@ ns:DigimonShape
         sh:maxCount 1 ;
         sh:message "Error de Cardinalidad: Se requiere exactamente una etapa evolutiva definida." ;
     ] ;
-
+    # Req-15
     sh:property [
         sh:path ns:hasType ;
         sh:name "Tipo de Digimon" ;
@@ -30,7 +30,7 @@ ns:DigimonShape
         sh:maxCount 1 ;
         sh:message "Error Semántico: El tipo debe ser uno de los valores permitidos: Vaccine, Virus, Data o Free." ;
     ] ;
-
+    # Req-16
     sh:property [
         sh:path ns:hasElement ;
         sh:name "Elemento" ;
@@ -40,7 +40,7 @@ ns:DigimonShape
         sh:maxCount 1 ;
         sh:message "Error de Cardinalidad: Todo Digimon debe poseer exactamente un elemento válido." ;
     ] ;
-
+    # Req 17 / Req-21
     sh:property [
         sh:path ns:hasSupportSkill ;
         sh:name "Habilidad de soporte" ;
@@ -50,7 +50,7 @@ ns:DigimonShape
         sh:maxCount 1 ;
         sh:message "Error de Cardinalidad: Todo Digimon debe tener exactamente una habilidad de soporte válida." ;
     ] ;
-
+    # Req-13 / Req-19
     sh:property [
         sh:path ns:learnsMove ;
         sh:name "Movimiento aprendido" ;
@@ -59,42 +59,42 @@ ns:DigimonShape
         sh:minCount 1 ;
         sh:message "Todo Digimon debe aprender al menos un Move válido." ;
     ] ;
-
+    # Req-05
     sh:property [
         sh:path ns:hp ;
         sh:datatype xsd:integer ;
         sh:minInclusive 0 ;
         sh:message "Error de Datos: Los puntos de salud (HP) deben ser un valor entero no negativo." ;
     ] ;
-
+    # Req-10
     sh:property [
         sh:path ns:sp ;
         sh:datatype xsd:integer ;
         sh:minInclusive 0 ;
         sh:message "Error de Datos: Los puntos de habilidad (SP) deben ser un valor entero no negativo." ;
     ] ;
-
+    # Req-06
     sh:property [
         sh:path ns:atk ;
         sh:datatype xsd:integer ;
         sh:minInclusive 0 ;
         sh:message "Error de Datos: El ataque (ATK) debe ser un valor entero no negativo." ;
     ] ;
-
+    # Req-07
     sh:property [
         sh:path ns:def ;
         sh:datatype xsd:integer ;
         sh:minInclusive 0 ;
         sh:message "Error de Datos: La defensa (DEF) debe ser un valor entero no negativo." ;
     ] ;
-
+    # Req-08
     sh:property [
         sh:path ns:int ;
         sh:datatype xsd:integer ;
         sh:minInclusive 0 ;
         sh:message "Error de Datos: La inteligencia (INT) debe ser un valor entero no negativo." ;
     ] ;
-
+    # Req-09
     sh:property [
         sh:path ns:spd ;
         sh:datatype xsd:integer ;
@@ -107,7 +107,7 @@ ns:MoveShape
     rdfs:label "Validación Move" ;
     sh:targetClass ns:Move ;
     sh:nodeKind sh:IRI ;
-
+    # Req-24
     sh:property [
         sh:path ns:spCost ;
         sh:datatype xsd:integer ;
@@ -115,7 +115,7 @@ ns:MoveShape
         sh:minCount 1 ;
         sh:message "Todo movimiento debe especificar un coste de SP entero no negativo." ;
     ] ;
-
+    # Req-25
     sh:property [
         sh:path ns:power ;
         sh:datatype xsd:integer ;
@@ -123,7 +123,7 @@ ns:MoveShape
         sh:minCount 1 ;
         sh:message "Todo movimiento debe especificar una potencia entera no negativa." ;
     ] ;
-
+    # Req-23
     sh:property [
         sh:path ns:inheritable ;
         sh:datatype xsd:boolean ;
@@ -131,7 +131,7 @@ ns:MoveShape
         sh:maxCount 1 ;
         sh:message "Todo movimiento debe indicar si es heredable mediante un valor booleano." ;
     ] ;
-
+    # Req-12
     sh:property [
         sh:path ns:description ;
         sh:datatype xsd:string ;
@@ -143,7 +143,7 @@ ns:MoveElementShape
     a sh:NodeShape ;
     rdfs:label "Validación del elemento de Move" ;
     sh:targetClass ns:Move ;
-
+    # Req-04
     sh:property [
         sh:path ns:hasMoveElement ;
         sh:class ns:Element ;
@@ -157,14 +157,14 @@ ns:SupportSkillShape
     rdfs:label "Validación SupportSkill" ;
     sh:targetClass ns:SupportSkill ;
     sh:nodeKind sh:IRI ;
-
+    # Req-17
     sh:property [
         sh:path ns:skillName ;
         sh:datatype xsd:string ;
         sh:minCount 1 ;
         sh:message "Una habilidad de soporte debe tener un nombre." ;
     ] ;
-
+    # Req-17
     sh:property [
         sh:path ns:description ;
         sh:datatype xsd:string ;
@@ -177,11 +177,11 @@ ns:TypeShape
     rdfs:label "Validación Type" ;
     sh:targetClass ns:Type ;
     sh:nodeKind sh:IRI ;
-
+    # Req-03
     sh:property [
         sh:path ns:isStrongAgainst ;
         sh:class ns:Type ;
-        sh:message "La relación isStrongTypeAgainst debe conectar un Type con otro Type." ;
+        sh:message "La relación isStrongAgainst debe conectar un Type con otro Type." ;
     ] .
 
 ns:ElementShape
@@ -189,9 +189,9 @@ ns:ElementShape
     rdfs:label "Validación Element" ;
     sh:targetClass ns:Element ;
     sh:nodeKind sh:IRI ;
-
+    # Req-04
     sh:property [
         sh:path ns:isStrongTypeAgainst ;
         sh:class ns:Element ;
-        sh:message "La relación isStrongAgainst debe conectar un Element con otro Element." ;
+        sh:message "La relación isStrongTypeAgainst debe conectar un Element con otro Element." ;
     ] .
