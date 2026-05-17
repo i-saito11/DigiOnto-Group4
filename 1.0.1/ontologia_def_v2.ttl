@@ -414,3 +414,7 @@ mod:createdWith rdf:type owl:AnnotationProperty .
 <http://example.org/digiOntoG4Data>
   skos:prefLabel "Data" ;
   skos:definition "Tipo Data."@es .
+
+<http://example.org/digiOntoG4Free>
+  skos:prefLabel "Free" ;
+  skos:definition "Tipo Free."@es .
