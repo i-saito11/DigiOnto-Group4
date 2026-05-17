@@ -43,5 +43,6 @@ La ontología se basa en la integración de las siguientes fuentes:
 
 ## Links para las versiones
 
-**Version 1.0.0** [https://i-saito11.github.io/DigiOnto-Group4/1.0.0/index-en.html]
-**Version 1.0.1** [https://i-saito11.github.io/DigiOnto-Group4/1.0.1/index-en.html]
+[![v1.0.0](https://img.shields.io/badge/docs-v1.0.0-blue)](https://i-saito11.github.io/DigiOnto-Group4/1.0.0/index-en.html)
+
+[![v1.0.1](https://img.shields.io/badge/docs-v1.0.1-green)](https://i-saito11.github.io/DigiOnto-Group4/1.0.1/index-en.html)
