@@ -1,6 +1,6 @@
 # DigiOnto: Ontology Requirements Specification 
 
-[![v1.0.0](https://img.shields.io/badge/docs-v1.0.0-blue)](https://i-saito11.github.io/DigiOnto-Group4/1.0.0/index-en.html) [![v1.0.1](https://img.shields.io/badge/docs-v1.0.1-green)](https://i-saito11.github.io/DigiOnto-Group4/1.0.1/index-en.html)
+[![v1.0.0](https://img.shields.io/badge/docs-v1.0.0-blue)](https://i-saito11.github.io/digionto-group4/1.0.0/index-en.html) [![v1.0.1](https://img.shields.io/badge/docs-v1.0.1-green)](https://i-saito11.github.io/digionto-group4/1.0.1/index-en.html)
 
 Bienvenidos al repositorio oficial del **Grupo 4** para la práctica de Especificación de Requisitos Ontológicos. 
 
@@ -8,33 +8,32 @@ Este proyecto define los requisitos funcionales y no funcionales para la creaci�
 
 ## Estructura del Repositorio
 
-Para cumplir con los criterios de evaluación de la asignatura, este repositorio contiene los siguientes entregables:
+El proyecto ha evolucionado y ahora se estructura en base a sus **versiones**. En la raíz del repositorio encontraréis las carpetas de las versiones publicadas (**`1.0.0/`** y **`1.0.1/`**). 
 
-*  **`OntologyRequirements_Updated.csv`**: Archivo principal que contiene los 20 requisitos funcionales formateados como Preguntas de Competencia (Competency Questions).
+Dentro de cada carpeta de versión se incluye el conjunto completo de artefactos y documentación:
 
-*  **`use_cases.md`**: Documento que detalla los 2 casos de uso principales (Team Builder competitivo y Enciclopedia Semántica) que motivan el desarrollo de esta ontología.
+* **Documentación Web (Widoco)**: Archivos HTML estáticos, siendo `index-en.html` la página principal generada a partir de la ontología.
+* **Ontología (`ontology.*` y `ontologia_def_*`)**: El código fuente de la ontología disponible en múltiples formatos de serialización (OWL/XML, Turtle, N-Triples, JSON-LD).
+* **`.htaccess`**: Archivo de configuración que habilita la *Negociación de Contenido* en GitHub Pages para servir el formato adecuado según la petición del cliente.
+* **Documentación Técnica**:
+  * **`OntologyRequirements_Updated.csv`**: Archivo principal que contiene los requisitos funcionales formateados como Preguntas de Competencia (Competency Questions).
+  * **`use_cases.md`**: Casos de uso principales (Team Builder competitivo y Enciclopedia Semántica) que motivan el desarrollo.
+  * **`discarded_fields.md`**: Justificación técnica de las variables excluidas del modelado conceptual.
+  * **`datasets_links.md`**: Referencias y enlaces a los datasets utilizados.
+* **Diagramas**: Diseños conceptuales siguiendo la nomenclatura Chowlk. Cada versión incluye los archivos fuente editables (`.drawio`) y su exportación para visualización (`.pdf`). En la versión `1.0.1` se encuentran los diagramas definitivos.
+* **`shacl/`**: Carpeta destinada a la validación de la ontología mediante Shapes Constraint Language:
+  * **`shapes.ttl`** / **`shape.ttl`**: Definición de las restricciones estructurales (Filtro de calidad) basadas en los requisitos.
+  * **`data.ttl`**: Instancias de prueba del dominio Digimon (válidas y con errores inyectados).
+  * **`report.ttl`**: Informe generado que documenta el cumplimiento o las violaciones de las reglas.
 
-*  **`discarded_fields.md`**: Justificación técnica de las variables y columnas de los datasets originales que han sido excluidas del modelado conceptual.
-
-*  **`datasets_links.md`**: Referencias y enlaces a los datasets utilizados (DigiDB principal y Movelist extendido) extraídos de Kaggle.
-
-* **`diagramas/`**: Carpeta que contiene los diagramas conceptuales siguiendo nomenclatura Chowlk. Se incluyen dos diseños, cada una con su archivo fuente editable (`.drawio`) y su versión exportada para fácil visualización (`.pdf`):
-  * **Diagrama Inicial**: Primer borrador del modelo conceptual (`diagrama_inicial.drawio` y `Chowlk_Developing.drawio.pdf`).
-  * **Diagrama Corregido**: Versión final refinada tras aplicar las correcciones pertinentes (`diagrama_corregido.drawio` y `diagrama_corregido.drawio.pdf`).
- 
- * **`shacl/`**: Carpeta destinada a la validación de la ontología mediante Shapes Constraint Language:
-    * **shapes.ttl**: Definición de las restricciones estructurales (Filtro de calidad) en lenguaje SHACL basadas en nuestros requisitos funcionales.
-    * **data.ttl**: Instancias de prueba del dominio Digimon (tanto válidas como con errores inyectados a propósito) para evaluar las reglas.
-    * **report.ttl**: Informe de validación generado que documenta qué datos cumplen con las reglas definidas y qué violaciones se han detectado.
-
-##  Fuentes de Datos
+## Fuentes de Datos
 
 La ontología se basa en la integración de las siguientes fuentes:
 1. **Dataset Principal asignado**: [DigiDB - Digimon Database](https://www.kaggle.com/datasets/rtatman/digidb) (Estadísticas base, atributos y tipos).
 2. **Dataset Adicional (Extensión del dominio)**: [DigiDB Support Movelist](https://www.kaggle.com/datasets/rtatman/digidb?select=DigiDB_supportlist.csv) (Ataques de support).
 3. **Dataset Adicional (Extensión del dominio)**: [DigiDB Movelist](https://www.kaggle.com/datasets/rtatman/digidb?select=DigiDB_movelist.csv) (Listado de ataques). Utilizando la sugerencia de clase hemos añadido este dataset pues, necesitamos más datos.
 
-##  Autores - Grupo 4
+## Autores - Grupo 4
 * Miguel Díaz Martín
 * Íñigo Rodríguez Saito
 * Andrés Knyshayid Voronovskyy
@@ -42,4 +41,3 @@ La ontología se basa en la integración de las siguientes fuentes:
 
 ---
 *Práctica desarrollada para la asignatura de Developing Open, Interoperable Semantic Resources.*
-
