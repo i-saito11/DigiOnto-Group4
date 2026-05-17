@@ -1,5 +1,5 @@
-@prefix : <http://example.org/digimon#> .
-@prefix ns: <http://example.org/digimon#> .
+@prefix : <http://example.org/digiOntoG4#> .
+@prefix ns: <http://example.org/digiOntoG4#> .
 @prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,7 +8,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://example.org/digimon#> .
+@base <http://example.org/digiOntoG4#> .
 
 <http://example.org/digiOntoG4> rdf:type owl:Ontology ;
                                  mod:createdWith <https://chowlk.linkeddata.es/> ;
@@ -245,25 +245,25 @@ mod:createdWith rdf:type owl:AnnotationProperty .
 ###  http://example.org/digiOntoG4Data
 <http://example.org/digiOntoG4Data> rdf:type owl:NamedIndividual ,
                                              <http://example.org/digiOntoG4Type> ;
-                                    <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Vaccine> .
+                                    <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Vaccine> .
 
 
 ###  http://example.org/digiOntoG4Earth
 <http://example.org/digiOntoG4Earth> rdf:type owl:NamedIndividual ,
                                               <http://example.org/digiOntoG4Element> ;
-                                     <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Electric> .
+                                     <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Electric> .
 
 
 ###  http://example.org/digiOntoG4Electric
 <http://example.org/digiOntoG4Electric> rdf:type owl:NamedIndividual ,
                                                  <http://example.org/digiOntoG4Element> ;
-                                        <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Wind> .
+                                        <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Wind> .
 
 
 ###  http://example.org/digiOntoG4Fire
 <http://example.org/digiOntoG4Fire> rdf:type owl:NamedIndividual ,
                                              <http://example.org/digiOntoG4Element> ;
-                                    <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Plant> .
+                                    <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Plant> .
 
 
 ###  http://example.org/digiOntoG4Free
@@ -274,37 +274,37 @@ mod:createdWith rdf:type owl:AnnotationProperty .
 ###  http://example.org/digiOntoG4Light
 <http://example.org/digiOntoG4Light> rdf:type owl:NamedIndividual ,
                                               <http://example.org/digiOntoG4Element> ;
-                                     <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Dark> .
+                                     <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Dark> .
 
 
 ###  http://example.org/digiOntoG4Plant
 <http://example.org/digiOntoG4Plant> rdf:type owl:NamedIndividual ,
                                               <http://example.org/digiOntoG4Element> ;
-                                     <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Water> .
+                                     <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Water> .
 
 
 ###  http://example.org/digiOntoG4Vaccine
 <http://example.org/digiOntoG4Vaccine> rdf:type owl:NamedIndividual ,
                                                 <http://example.org/digiOntoG4Type> ;
-                                       <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Virus> .
+                                       <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Virus> .
 
 
 ###  http://example.org/digiOntoG4Virus
 <http://example.org/digiOntoG4Virus> rdf:type owl:NamedIndividual ,
                                               <http://example.org/digiOntoG4Type> ;
-                                     <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Data> .
+                                     <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Data> .
 
 
 ###  http://example.org/digiOntoG4Water
 <http://example.org/digiOntoG4Water> rdf:type owl:NamedIndividual ,
                                               <http://example.org/digiOntoG4Element> ;
-                                     <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Fire> .
+                                     <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Fire> .
 
 
 ###  http://example.org/digiOntoG4Wind
 <http://example.org/digiOntoG4Wind> rdf:type owl:NamedIndividual ,
                                              <http://example.org/digiOntoG4Element> ;
-                                    <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Earth> .
+                                    <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Earth> .
 
 
 #################################################################
@@ -323,16 +323,8 @@ mod:createdWith rdf:type owl:AnnotationProperty .
 
 
 #################################################################
-#    SKOS descriptions (prefLabel + definition en/es)
+#    SKOS annotations
 #################################################################
-
-<http://example.org/digiOntoG4atk>
-  skos:preflabel "Atk" ;
-  skos:definition "Representa el ataque."@es .
-
-<http://example.org/digiOntoG4learnsMove>
-  skos:preflabel "LearnsMove" ;
-  skos:definition "Representa los movimientos que puede aprender un Digimon."@es .
 
 <http://example.org/digiOntoG4Digimon>
   skos:prefLabel "Digimon" ;
@@ -418,3 +410,91 @@ mod:createdWith rdf:type owl:AnnotationProperty .
 <http://example.org/digiOntoG4Free>
   skos:prefLabel "Free" ;
   skos:definition "Tipo Free."@es .
+
+# Object Properties
+
+<http://example.org/digiOntoG4learnsMove>
+  skos:prefLabel "learns move" ;
+  skos:definition "Representa los movimientos que puede aprender un Digimon."@es .
+
+<http://example.org/digiOntoG4hasElement>
+  skos:prefLabel "has element" ;
+  skos:definition "Relaciona un Digimon con su elemento."@es .
+
+<http://example.org/digiOntoG4hasEvolutionStage>
+  skos:prefLabel "has evolution stage" ;
+  skos:definition "Relaciona un Digimon con su etapa evolutiva."@es .
+
+<http://example.org/digiOntoG4hasMoveElement>
+  skos:prefLabel "has move element" ;
+  skos:definition "Relaciona un movimiento con su elemento."@es .
+
+<http://example.org/digiOntoG4hasSupportSkill>
+  skos:prefLabel "has support skill" ;
+  skos:definition "Relaciona un Digimon con su habilidad de soporte."@es .
+
+<http://example.org/digiOntoG4hasType>
+  skos:prefLabel "has type" ;
+  skos:definition "Relaciona un Digimon con su tipo."@es .
+
+<http://example.org/digiOntoG4isStrongAgainst>
+  skos:prefLabel "is strong against" ;
+  skos:definition "Indica ventaja de un elemento frente a otro."@es .
+
+<http://example.org/digiOntoG4isStrongTypeAgainst>
+  skos:prefLabel "is strong type against" ;
+  skos:definition "Indica ventaja de tipo frente a otro tipo."@es .
+
+# Datatype properties
+
+<http://example.org/digiOntoG4atk>
+  skos:prefLabel "atk" ;
+  skos:definition "Representa el ataque."@es .
+
+<http://example.org/digiOntoG4def>
+  skos:prefLabel "def" ;
+  skos:definition "Representa la defensa."@es .
+
+<http://example.org/digiOntoG4description>
+  skos:prefLabel "description" ;
+  skos:definition "Describe un movimiento."@es .
+
+<http://example.org/digiOntoG4elementName>
+  skos:prefLabel "element name" ;
+  skos:definition "Nombre de un elemento."@es .
+
+<http://example.org/digiOntoG4hp>
+  skos:prefLabel "hp" ;
+  skos:definition "Representa los puntos de vida."@es .
+
+<http://example.org/digiOntoG4inheritable>
+  skos:prefLabel "inheritable" ;
+  skos:definition "Indica si un movimiento puede heredarse."@es .
+
+<http://example.org/digiOntoG4int>
+  skos:prefLabel "int" ;
+  skos:definition "Representa la inteligencia."@es .
+
+<http://example.org/digiOntoG4power>
+  skos:prefLabel "power" ;
+  skos:definition "Representa la potencia de un movimiento."@es .
+
+<http://example.org/digiOntoG4skillName>
+  skos:prefLabel "skill name" ;
+  skos:definition "Nombre de una habilidad de soporte."@es .
+
+<http://example.org/digiOntoG4sp>
+  skos:prefLabel "sp" ;
+  skos:definition "Representa los puntos de habilidad."@es .
+
+<http://example.org/digiOntoG4spCost>
+  skos:prefLabel "sp cost" ;
+  skos:definition "Coste de SP necesario para usar un movimiento."@es .
+
+<http://example.org/digiOntoG4spd>
+  skos:prefLabel "spd" ;
+  skos:definition "Representa la velocidad."@es .
+
+<http://example.org/digiOntoG4stageName>
+  skos:prefLabel "stage name" ;
+  skos:definition "Nombre de una etapa evolutiva."@es .
