@@ -40,3 +40,8 @@ La ontología se basa en la integración de las siguientes fuentes:
 
 ---
 *Práctica desarrollada para la asignatura de Developing Open, Interoperable Semantic Resources.*
+
+## Links para las versiones
+
+**Version 1.0.0** [https://i-saito11.github.io/DigiOnto-Group4/1.0.0/index-en.html]
+**Version 1.0.1** [https://i-saito11.github.io/DigiOnto-Group4/1.0.1/index-en.html]
