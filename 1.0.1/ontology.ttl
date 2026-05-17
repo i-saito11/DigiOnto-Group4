@@ -37,10 +37,6 @@
 <http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
 
 
-###  http://www.w3.org/2004/02/skos/core#preflabel
-<http://www.w3.org/2004/02/skos/core#preflabel> rdf:type owl:AnnotationProperty .
-
-
 ###  https://w3id.org/mod#createdWith
 <https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
 
@@ -53,49 +49,63 @@
 <http://example.org/digiOntoG4hasElement> rdf:type owl:ObjectProperty ;
                                           rdfs:domain <http://example.org/digiOntoG4Digimon> ;
                                           rdfs:range <http://example.org/digiOntoG4Element> ;
-                                          rdfs:label "has element" .
+                                          rdfs:label "has element" ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "Relaciona un Digimon con su elemento."@es ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "has element" .
 
 
 ###  http://example.org/digiOntoG4hasEvolutionStage
 <http://example.org/digiOntoG4hasEvolutionStage> rdf:type owl:ObjectProperty ;
                                                  rdfs:domain <http://example.org/digiOntoG4Digimon> ;
                                                  rdfs:range <http://example.org/digiOntoG4EvolutionStage> ;
-                                                 rdfs:label "has evolution stage" .
+                                                 rdfs:label "has evolution stage" ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "Relaciona un Digimon con su etapa evolutiva."@es ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "has evolution stage" .
 
 
 ###  http://example.org/digiOntoG4hasMoveElement
 <http://example.org/digiOntoG4hasMoveElement> rdf:type owl:ObjectProperty ;
                                               rdfs:domain <http://example.org/digiOntoG4Move> ;
                                               rdfs:range <http://example.org/digiOntoG4Element> ;
-                                              rdfs:label "has move element" .
+                                              rdfs:label "has move element" ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> "Relaciona un movimiento con su elemento."@es ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "has move element" .
 
 
 ###  http://example.org/digiOntoG4hasSupportSkill
 <http://example.org/digiOntoG4hasSupportSkill> rdf:type owl:ObjectProperty ;
                                                rdfs:domain <http://example.org/digiOntoG4Digimon> ;
                                                rdfs:range <http://example.org/digiOntoG4SupportSkill> ;
-                                               rdfs:label "has support skill" .
+                                               rdfs:label "has support skill" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Relaciona un Digimon con su habilidad de soporte."@es ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "has support skill" .
 
 
 ###  http://example.org/digiOntoG4hasType
 <http://example.org/digiOntoG4hasType> rdf:type owl:ObjectProperty ;
                                        rdfs:domain <http://example.org/digiOntoG4Digimon> ;
                                        rdfs:range <http://example.org/digiOntoG4Type> ;
-                                       rdfs:label "has type" .
+                                       rdfs:label "has type" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Relaciona un Digimon con su tipo."@es ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "has type" .
 
 
 ###  http://example.org/digiOntoG4isStrongAgainst
 <http://example.org/digiOntoG4isStrongAgainst> rdf:type owl:ObjectProperty ;
                                                rdfs:domain <http://example.org/digiOntoG4Element> ;
                                                rdfs:range <http://example.org/digiOntoG4Element> ;
-                                               rdfs:label "is strong against" .
+                                               rdfs:label "is strong against" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Indica ventaja de un elemento frente a otro."@es ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "is strong against" .
 
 
 ###  http://example.org/digiOntoG4isStrongTypeAgainst
 <http://example.org/digiOntoG4isStrongTypeAgainst> rdf:type owl:ObjectProperty ;
                                                    rdfs:domain <http://example.org/digiOntoG4Type> ;
                                                    rdfs:range <http://example.org/digiOntoG4Type> ;
-                                                   rdfs:label "is strong type against" .
+                                                   rdfs:label "is strong type against" ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "Indica ventaja de tipo frente a otro tipo."@es ;
+                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "is strong type against" .
 
 
 ###  http://example.org/digiOntoG4learnsMove
@@ -104,7 +114,7 @@
                                           rdfs:range <http://example.org/digiOntoG4Move> ;
                                           rdfs:label "learns move" ;
                                           <http://www.w3.org/2004/02/skos/core#definition> "Representa los movimientos que puede aprender un Digimon."@es ;
-                                          <http://www.w3.org/2004/02/skos/core#preflabel> "LearnsMove" .
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "learns move" .
 
 
 #################################################################
@@ -117,91 +127,115 @@
                                    rdfs:range xsd:integer ;
                                    rdfs:label "atk" ;
                                    <http://www.w3.org/2004/02/skos/core#definition> "Representa el ataque."@es ;
-                                   <http://www.w3.org/2004/02/skos/core#preflabel> "Atk" .
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "atk" .
 
 
 ###  http://example.org/digiOntoG4def
 <http://example.org/digiOntoG4def> rdf:type owl:DatatypeProperty ;
                                    rdfs:domain <http://example.org/digiOntoG4Digimon> ;
                                    rdfs:range xsd:integer ;
-                                   rdfs:label "def" .
+                                   rdfs:label "def" ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> "Representa la defensa."@es ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "def" .
 
 
 ###  http://example.org/digiOntoG4description
 <http://example.org/digiOntoG4description> rdf:type owl:DatatypeProperty ;
                                            rdfs:domain <http://example.org/digiOntoG4Move> ;
                                            rdfs:range xsd:string ;
-                                           rdfs:label "description" .
+                                           rdfs:label "description" ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "Describe un movimiento."@es ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "description" .
 
 
 ###  http://example.org/digiOntoG4elementName
 <http://example.org/digiOntoG4elementName> rdf:type owl:DatatypeProperty ;
                                            rdfs:domain <http://example.org/digiOntoG4Element> ;
                                            rdfs:range xsd:string ;
-                                           rdfs:label "element name" .
+                                           rdfs:label "element name" ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "Nombre de un elemento."@es ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "element name" .
 
 
 ###  http://example.org/digiOntoG4hp
 <http://example.org/digiOntoG4hp> rdf:type owl:DatatypeProperty ;
                                   rdfs:domain <http://example.org/digiOntoG4Digimon> ;
                                   rdfs:range xsd:integer ;
-                                  rdfs:label "hp" .
+                                  rdfs:label "hp" ;
+                                  <http://www.w3.org/2004/02/skos/core#definition> "Representa los puntos de vida."@es ;
+                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "hp" .
 
 
 ###  http://example.org/digiOntoG4inheritable
 <http://example.org/digiOntoG4inheritable> rdf:type owl:DatatypeProperty ;
                                            rdfs:domain <http://example.org/digiOntoG4Move> ;
                                            rdfs:range xsd:boolean ;
-                                           rdfs:label "inheritable" .
+                                           rdfs:label "inheritable" ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "Indica si un movimiento puede heredarse."@es ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "inheritable" .
 
 
 ###  http://example.org/digiOntoG4int
 <http://example.org/digiOntoG4int> rdf:type owl:DatatypeProperty ;
                                    rdfs:domain <http://example.org/digiOntoG4Digimon> ;
                                    rdfs:range xsd:integer ;
-                                   rdfs:label "int" .
+                                   rdfs:label "int" ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> "Representa la inteligencia."@es ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "int" .
 
 
 ###  http://example.org/digiOntoG4power
 <http://example.org/digiOntoG4power> rdf:type owl:DatatypeProperty ;
                                      rdfs:domain <http://example.org/digiOntoG4Move> ;
                                      rdfs:range xsd:integer ;
-                                     rdfs:label "power" .
+                                     rdfs:label "power" ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "Representa la potencia de un movimiento."@es ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "power" .
 
 
 ###  http://example.org/digiOntoG4skillName
 <http://example.org/digiOntoG4skillName> rdf:type owl:DatatypeProperty ;
                                          rdfs:domain <http://example.org/digiOntoG4SupportSkill> ;
                                          rdfs:range xsd:string ;
-                                         rdfs:label "skill name" .
+                                         rdfs:label "skill name" ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "Nombre de una habilidad de soporte."@es ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "skill name" .
 
 
 ###  http://example.org/digiOntoG4sp
 <http://example.org/digiOntoG4sp> rdf:type owl:DatatypeProperty ;
                                   rdfs:domain <http://example.org/digiOntoG4Digimon> ;
                                   rdfs:range xsd:integer ;
-                                  rdfs:label "sp" .
+                                  rdfs:label "sp" ;
+                                  <http://www.w3.org/2004/02/skos/core#definition> "Representa los puntos de habilidad."@es ;
+                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "sp" .
 
 
 ###  http://example.org/digiOntoG4spCost
 <http://example.org/digiOntoG4spCost> rdf:type owl:DatatypeProperty ;
                                       rdfs:domain <http://example.org/digiOntoG4Move> ;
                                       rdfs:range xsd:integer ;
-                                      rdfs:label "sp cost" .
+                                      rdfs:label "sp cost" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Coste de SP necesario para usar un movimiento."@es ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "sp cost" .
 
 
 ###  http://example.org/digiOntoG4spd
 <http://example.org/digiOntoG4spd> rdf:type owl:DatatypeProperty ;
                                    rdfs:domain <http://example.org/digiOntoG4Digimon> ;
                                    rdfs:range xsd:integer ;
-                                   rdfs:label "spd" .
+                                   rdfs:label "spd" ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> "Representa la velocidad."@es ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "spd" .
 
 
 ###  http://example.org/digiOntoG4stageName
 <http://example.org/digiOntoG4stageName> rdf:type owl:DatatypeProperty ;
                                          rdfs:domain <http://example.org/digiOntoG4EvolutionStage> ;
                                          rdfs:range xsd:string ;
-                                         rdfs:label "stage name" .
+                                         rdfs:label "stage name" ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "Nombre de una etapa evolutiva."@es ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "stage name" .
 
 
 #################################################################
@@ -289,7 +323,7 @@
 ###  http://example.org/digiOntoG4Data
 <http://example.org/digiOntoG4Data> rdf:type owl:NamedIndividual ,
                                              <http://example.org/digiOntoG4Type> ;
-                                    <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Vaccine> ;
+                                    <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Vaccine> ;
                                     <http://www.w3.org/2004/02/skos/core#definition> "Tipo Data."@es ;
                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Data" .
 
@@ -297,7 +331,7 @@
 ###  http://example.org/digiOntoG4Earth
 <http://example.org/digiOntoG4Earth> rdf:type owl:NamedIndividual ,
                                               <http://example.org/digiOntoG4Element> ;
-                                     <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Electric> ;
+                                     <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Electric> ;
                                      <http://www.w3.org/2004/02/skos/core#definition> "Elemento Earth."@es ;
                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Earth" .
 
@@ -305,7 +339,7 @@
 ###  http://example.org/digiOntoG4Electric
 <http://example.org/digiOntoG4Electric> rdf:type owl:NamedIndividual ,
                                                  <http://example.org/digiOntoG4Element> ;
-                                        <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Wind> ;
+                                        <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Wind> ;
                                         <http://www.w3.org/2004/02/skos/core#definition> "Elemento Electric."@es ;
                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Electric" .
 
@@ -313,20 +347,22 @@
 ###  http://example.org/digiOntoG4Fire
 <http://example.org/digiOntoG4Fire> rdf:type owl:NamedIndividual ,
                                              <http://example.org/digiOntoG4Element> ;
-                                    <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Plant> ;
+                                    <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Plant> ;
                                     <http://www.w3.org/2004/02/skos/core#definition> "Elemento Fire."@es ;
                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Fire" .
 
 
 ###  http://example.org/digiOntoG4Free
 <http://example.org/digiOntoG4Free> rdf:type owl:NamedIndividual ,
-                                             <http://example.org/digiOntoG4Type> .
+                                             <http://example.org/digiOntoG4Type> ;
+                                    <http://www.w3.org/2004/02/skos/core#definition> "Tipo Free."@es ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Free" .
 
 
 ###  http://example.org/digiOntoG4Light
 <http://example.org/digiOntoG4Light> rdf:type owl:NamedIndividual ,
                                               <http://example.org/digiOntoG4Element> ;
-                                     <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Dark> ;
+                                     <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Dark> ;
                                      <http://www.w3.org/2004/02/skos/core#definition> "Elemento Light."@es ;
                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Light" .
 
@@ -334,7 +370,7 @@
 ###  http://example.org/digiOntoG4Plant
 <http://example.org/digiOntoG4Plant> rdf:type owl:NamedIndividual ,
                                               <http://example.org/digiOntoG4Element> ;
-                                     <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Water> ;
+                                     <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Water> ;
                                      <http://www.w3.org/2004/02/skos/core#definition> "Elemento Plant."@es ;
                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Plant" .
 
@@ -342,7 +378,7 @@
 ###  http://example.org/digiOntoG4Vaccine
 <http://example.org/digiOntoG4Vaccine> rdf:type owl:NamedIndividual ,
                                                 <http://example.org/digiOntoG4Type> ;
-                                       <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Virus> ;
+                                       <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Virus> ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "Tipo Vaccine."@es ;
                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Vaccine" .
 
@@ -350,7 +386,7 @@
 ###  http://example.org/digiOntoG4Virus
 <http://example.org/digiOntoG4Virus> rdf:type owl:NamedIndividual ,
                                               <http://example.org/digiOntoG4Type> ;
-                                     <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Data> ;
+                                     <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Data> ;
                                      <http://www.w3.org/2004/02/skos/core#definition> "Tipo Virus."@es ;
                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Virus" .
 
@@ -358,7 +394,7 @@
 ###  http://example.org/digiOntoG4Water
 <http://example.org/digiOntoG4Water> rdf:type owl:NamedIndividual ,
                                               <http://example.org/digiOntoG4Element> ;
-                                     <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Fire> ;
+                                     <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Fire> ;
                                      <http://www.w3.org/2004/02/skos/core#definition> "Elemento Water."@es ;
                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Water" .
 
@@ -366,7 +402,7 @@
 ###  http://example.org/digiOntoG4Wind
 <http://example.org/digiOntoG4Wind> rdf:type owl:NamedIndividual ,
                                              <http://example.org/digiOntoG4Element> ;
-                                    <http://example.org/digiOntoG4isStrongTypeAgainst> <http://example.org/digiOntoG4Earth> ;
+                                    <http://example.org/digiOntoG4isStrongAgainst> <http://example.org/digiOntoG4Earth> ;
                                     <http://www.w3.org/2004/02/skos/core#definition> "Elemento Wind."@es ;
                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Wind" .
 
