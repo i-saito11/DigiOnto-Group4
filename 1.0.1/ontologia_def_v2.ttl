@@ -9,7 +9,11 @@
 @base <http://example.org/digimon#> .
 
 <http://example.org/digiOntoG4> rdf:type owl:Ontology ;
-                                 mod:createdWith <https://chowlk.linkeddata.es/> .
+                                 mod:createdWith <https://chowlk.linkeddata.es/> ;
+                                 dcterms:title "DigiOnto" ;
+                                 dcterms:creator "Grupo 4" ;
+                                 owl:versionInfo "1.0.1" ;
+                                 dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> .
 
 #################################################################
 #    Annotation properties
