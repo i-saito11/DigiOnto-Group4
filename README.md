@@ -1,8 +1,6 @@
 # DigiOnto: Ontology Requirements Specification 
 
-[![v1.0.0](https://img.shields.io/badge/docs-v1.0.0-blue)](https://i-saito11.github.io/DigiOnto-Group4/1.0.0/index-en.html)
-
-[![v1.0.1](https://img.shields.io/badge/docs-v1.0.1-green)](https://i-saito11.github.io/DigiOnto-Group4/1.0.1/index-en.html)
+[![v1.0.0](https://img.shields.io/badge/docs-v1.0.0-blue)](https://i-saito11.github.io/DigiOnto-Group4/1.0.0/index-en.html) [![v1.0.1](https://img.shields.io/badge/docs-v1.0.1-green)](https://i-saito11.github.io/DigiOnto-Group4/1.0.1/index-en.html)
 
 Bienvenidos al repositorio oficial del **Grupo 4** para la práctica de Especificación de Requisitos Ontológicos. 
 
