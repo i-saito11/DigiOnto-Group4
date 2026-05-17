@@ -415,6 +415,174 @@ owl:priorVersion owl:priorVersion "1.0.0" .
 #    Annotations
 #################################################################
 
+<http://example.org/digiOntoG4Dark> <http://www.w3.org/2004/02/skos/core#definition> "Elemento Dark."@es ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Dark" .
+
+
+<http://example.org/digiOntoG4Data> <http://www.w3.org/2004/02/skos/core#definition> "Tipo Data."@es ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Data" .
+
+
+<http://example.org/digiOntoG4Digimon> <http://www.w3.org/2004/02/skos/core#definition> "Entidad que representa a una criatura Digimon."@es ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Digimon" .
+
+
+<http://example.org/digiOntoG4Earth> <http://www.w3.org/2004/02/skos/core#definition> "Elemento Earth."@es ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Earth" .
+
+
+<http://example.org/digiOntoG4Electric> <http://www.w3.org/2004/02/skos/core#definition> "Elemento Electric."@es ;
+                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Electric" .
+
+
+<http://example.org/digiOntoG4Element> <http://www.w3.org/2004/02/skos/core#definition> "Elemento que tienen movimientos y Digimon."@es ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Element" .
+
+
+<http://example.org/digiOntoG4EvolutionStage> <http://www.w3.org/2004/02/skos/core#definition> "Etapa de evolución de un Digimon."@es ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Evolution Stage" .
+
+
+<http://example.org/digiOntoG4Fire> <http://www.w3.org/2004/02/skos/core#definition> "Elemento Fire."@es ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Fire" .
+
+
+<http://example.org/digiOntoG4Free> <http://www.w3.org/2004/02/skos/core#definition> "Tipo Free."@es ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Free" .
+
+
+<http://example.org/digiOntoG4Light> <http://www.w3.org/2004/02/skos/core#definition> "Elemento Light."@es ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Light" .
+
+
+<http://example.org/digiOntoG4MagicMove> <http://www.w3.org/2004/02/skos/core#definition> "Movimiento de tipo mágico, subclase de Move."@es ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Magic Move" .
+
+
+<http://example.org/digiOntoG4Move> <http://www.w3.org/2004/02/skos/core#definition> "Acción que puede realizar un Digimon."@es ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Move" .
+
+
+<http://example.org/digiOntoG4PhysicalMove> <http://www.w3.org/2004/02/skos/core#definition> "Movimiento físico, subclase de Move."@es ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Physical Move" .
+
+
+<http://example.org/digiOntoG4Plant> <http://www.w3.org/2004/02/skos/core#definition> "Elemento Plant."@es ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Plant" .
+
+
+<http://example.org/digiOntoG4SupportMove> <http://www.w3.org/2004/02/skos/core#definition> "Movimiento de soporte, subclase de Move."@es ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Support Move" .
+
+
+<http://example.org/digiOntoG4SupportSkill> <http://www.w3.org/2004/02/skos/core#definition> "Habilidad de soporte aplicable a Digimon."@es ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Support Skill" .
+
+
+<http://example.org/digiOntoG4Type> <http://www.w3.org/2004/02/skos/core#definition> "Clasificación de tipo de Digimon (ej. Vaccine, Virus, Data)."@es ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Type" .
+
+
+<http://example.org/digiOntoG4Vaccine> <http://www.w3.org/2004/02/skos/core#definition> "Tipo Vaccine."@es ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Vaccine" .
+
+
+<http://example.org/digiOntoG4Virus> <http://www.w3.org/2004/02/skos/core#definition> "Tipo Virus."@es ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Virus" .
+
+
+<http://example.org/digiOntoG4Water> <http://www.w3.org/2004/02/skos/core#definition> "Elemento Water."@es ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Water" .
+
+
+<http://example.org/digiOntoG4Wind> <http://www.w3.org/2004/02/skos/core#definition> "Elemento Wind."@es ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Wind" .
+
+
+<http://example.org/digiOntoG4atk> <http://www.w3.org/2004/02/skos/core#definition> "Representa el ataque."@es ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "atk" .
+
+
+<http://example.org/digiOntoG4def> <http://www.w3.org/2004/02/skos/core#definition> "Representa la defensa."@es ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "def" .
+
+
+<http://example.org/digiOntoG4description> <http://www.w3.org/2004/02/skos/core#definition> "Describe un movimiento."@es ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "description" .
+
+
+<http://example.org/digiOntoG4elementName> <http://www.w3.org/2004/02/skos/core#definition> "Nombre de un elemento."@es ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "element name" .
+
+
+<http://example.org/digiOntoG4hasElement> <http://www.w3.org/2004/02/skos/core#definition> "Relaciona un Digimon con su elemento."@es ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "has element" .
+
+
+<http://example.org/digiOntoG4hasEvolutionStage> <http://www.w3.org/2004/02/skos/core#definition> "Relaciona un Digimon con su etapa evolutiva."@es ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "has evolution stage" .
+
+
+<http://example.org/digiOntoG4hasMoveElement> <http://www.w3.org/2004/02/skos/core#definition> "Relaciona un movimiento con su elemento."@es ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "has move element" .
+
+
+<http://example.org/digiOntoG4hasSupportSkill> <http://www.w3.org/2004/02/skos/core#definition> "Relaciona un Digimon con su habilidad de soporte."@es ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "has support skill" .
+
+
+<http://example.org/digiOntoG4hasType> <http://www.w3.org/2004/02/skos/core#definition> "Relaciona un Digimon con su tipo."@es ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "has type" .
+
+
+<http://example.org/digiOntoG4hp> <http://www.w3.org/2004/02/skos/core#definition> "Representa los puntos de vida."@es ;
+                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "hp" .
+
+
+<http://example.org/digiOntoG4inheritable> <http://www.w3.org/2004/02/skos/core#definition> "Indica si un movimiento puede heredarse."@es ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "inheritable" .
+
+
+<http://example.org/digiOntoG4int> <http://www.w3.org/2004/02/skos/core#definition> "Representa la inteligencia."@es ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "int" .
+
+
+<http://example.org/digiOntoG4isStrongAgainst> <http://www.w3.org/2004/02/skos/core#definition> "Indica ventaja de un elemento frente a otro."@es ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "is strong against" .
+
+
+<http://example.org/digiOntoG4isStrongTypeAgainst> <http://www.w3.org/2004/02/skos/core#definition> "Indica ventaja de tipo frente a otro tipo."@es ;
+                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "is strong type against" .
+
+
+<http://example.org/digiOntoG4learnsMove> <http://www.w3.org/2004/02/skos/core#definition> "Representa los movimientos que puede aprender un Digimon."@es ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "learns move" .
+
+
+<http://example.org/digiOntoG4power> <http://www.w3.org/2004/02/skos/core#definition> "Representa la potencia de un movimiento."@es ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "power" .
+
+
+<http://example.org/digiOntoG4skillName> <http://www.w3.org/2004/02/skos/core#definition> "Nombre de una habilidad de soporte."@es ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "skill name" .
+
+
+<http://example.org/digiOntoG4sp> <http://www.w3.org/2004/02/skos/core#definition> "Representa los puntos de habilidad."@es ;
+                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "sp" .
+
+
+<http://example.org/digiOntoG4spCost> <http://www.w3.org/2004/02/skos/core#definition> "Coste de SP necesario para usar un movimiento."@es ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "sp cost" .
+
+
+<http://example.org/digiOntoG4spd> <http://www.w3.org/2004/02/skos/core#definition> "Representa la velocidad."@es ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "spd" .
+
+
+<http://example.org/digiOntoG4stageName> <http://www.w3.org/2004/02/skos/core#definition> "Nombre de una etapa evolutiva."@es ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "stage name" .
+
+
 <http://purl.org/dc/terms/creator> <http://purl.org/dc/terms/creator> "Grupo4"@es .
 
 
@@ -443,181 +611,3 @@ owl:versionInfo owl:versionInfo "1.0.1" .
 
 
 ###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
-
-
-#################################################################
-#    SKOS annotations
-#################################################################
-
-<http://example.org/digiOntoG4Digimon>
-  skos:prefLabel "Digimon" ;
-  skos:definition "Entidad que representa a una criatura Digimon."@es .
-
-<http://example.org/digiOntoG4Element>
-  skos:prefLabel "Element" ;
-  skos:definition "Elemento que tienen movimientos y Digimon."@es .
-
-<http://example.org/digiOntoG4EvolutionStage>
-  skos:prefLabel "Evolution Stage" ;
-  skos:definition "Etapa de evolución de un Digimon."@es .
-
-<http://example.org/digiOntoG4Move>
-  skos:prefLabel "Move" ;
-  skos:definition "Acción que puede realizar un Digimon."@es .
-
-<http://example.org/digiOntoG4MagicMove>
-  skos:prefLabel "Magic Move" ;
-  skos:definition "Movimiento de tipo mágico, subclase de Move."@es .
-
-<http://example.org/digiOntoG4PhysicalMove>
-  skos:prefLabel "Physical Move" ;
-  skos:definition "Movimiento físico, subclase de Move."@es .
-
-<http://example.org/digiOntoG4SupportMove>
-  skos:prefLabel "Support Move" ;
-  skos:definition "Movimiento de soporte, subclase de Move."@es .
-
-<http://example.org/digiOntoG4SupportSkill>
-  skos:prefLabel "Support Skill" ;
-  skos:definition "Habilidad de soporte aplicable a Digimon."@es .
-
-<http://example.org/digiOntoG4Type>
-  skos:prefLabel "Type" ;
-  skos:definition "Clasificación de tipo de Digimon (ej. Vaccine, Virus, Data)."@es .
-
-# Individuals (elements and types)
-<http://example.org/digiOntoG4Dark>
-  skos:prefLabel "Dark" ;
-  skos:definition "Elemento Dark."@es .
-
-<http://example.org/digiOntoG4Light>
-  skos:prefLabel "Light" ;
-  skos:definition "Elemento Light."@es .
-
-<http://example.org/digiOntoG4Fire>
-  skos:prefLabel "Fire" ;
-  skos:definition "Elemento Fire."@es .
-
-<http://example.org/digiOntoG4Water>
-  skos:prefLabel "Water" ;
-  skos:definition "Elemento Water."@es .
-
-<http://example.org/digiOntoG4Earth>
-  skos:prefLabel "Earth" ;
-  skos:definition "Elemento Earth."@es .
-
-<http://example.org/digiOntoG4Wind>
-  skos:prefLabel "Wind" ;
-  skos:definition "Elemento Wind."@es .
-
-<http://example.org/digiOntoG4Plant>
-  skos:prefLabel "Plant" ;
-  skos:definition "Elemento Plant."@es .
-
-<http://example.org/digiOntoG4Electric>
-  skos:prefLabel "Electric" ;
-  skos:definition "Elemento Electric."@es .
-
-<http://example.org/digiOntoG4Vaccine>
-  skos:prefLabel "Vaccine" ;
-  skos:definition "Tipo Vaccine."@es .
-
-<http://example.org/digiOntoG4Virus>
-  skos:prefLabel "Virus" ;
-  skos:definition "Tipo Virus."@es .
-
-<http://example.org/digiOntoG4Data>
-  skos:prefLabel "Data" ;
-  skos:definition "Tipo Data."@es .
-
-<http://example.org/digiOntoG4Free>
-  skos:prefLabel "Free" ;
-  skos:definition "Tipo Free."@es .
-
-# Object Properties
-
-<http://example.org/digiOntoG4learnsMove>
-  skos:prefLabel "learns move" ;
-  skos:definition "Representa los movimientos que puede aprender un Digimon."@es .
-
-<http://example.org/digiOntoG4hasElement>
-  skos:prefLabel "has element" ;
-  skos:definition "Relaciona un Digimon con su elemento."@es .
-
-<http://example.org/digiOntoG4hasEvolutionStage>
-  skos:prefLabel "has evolution stage" ;
-  skos:definition "Relaciona un Digimon con su etapa evolutiva."@es .
-
-<http://example.org/digiOntoG4hasMoveElement>
-  skos:prefLabel "has move element" ;
-  skos:definition "Relaciona un movimiento con su elemento."@es .
-
-<http://example.org/digiOntoG4hasSupportSkill>
-  skos:prefLabel "has support skill" ;
-  skos:definition "Relaciona un Digimon con su habilidad de soporte."@es .
-
-<http://example.org/digiOntoG4hasType>
-  skos:prefLabel "has type" ;
-  skos:definition "Relaciona un Digimon con su tipo."@es .
-
-<http://example.org/digiOntoG4isStrongAgainst>
-  skos:prefLabel "is strong against" ;
-  skos:definition "Indica ventaja de un elemento frente a otro."@es .
-
-<http://example.org/digiOntoG4isStrongTypeAgainst>
-  skos:prefLabel "is strong type against" ;
-  skos:definition "Indica ventaja de tipo frente a otro tipo."@es .
-
-# Datatype properties
-
-<http://example.org/digiOntoG4atk>
-  skos:prefLabel "atk" ;
-  skos:definition "Representa el ataque."@es .
-
-<http://example.org/digiOntoG4def>
-  skos:prefLabel "def" ;
-  skos:definition "Representa la defensa."@es .
-
-<http://example.org/digiOntoG4description>
-  skos:prefLabel "description" ;
-  skos:definition "Describe un movimiento."@es .
-
-<http://example.org/digiOntoG4elementName>
-  skos:prefLabel "element name" ;
-  skos:definition "Nombre de un elemento."@es .
-
-<http://example.org/digiOntoG4hp>
-  skos:prefLabel "hp" ;
-  skos:definition "Representa los puntos de vida."@es .
-
-<http://example.org/digiOntoG4inheritable>
-  skos:prefLabel "inheritable" ;
-  skos:definition "Indica si un movimiento puede heredarse."@es .
-
-<http://example.org/digiOntoG4int>
-  skos:prefLabel "int" ;
-  skos:definition "Representa la inteligencia."@es .
-
-<http://example.org/digiOntoG4power>
-  skos:prefLabel "power" ;
-  skos:definition "Representa la potencia de un movimiento."@es .
-
-<http://example.org/digiOntoG4skillName>
-  skos:prefLabel "skill name" ;
-  skos:definition "Nombre de una habilidad de soporte."@es .
-
-<http://example.org/digiOntoG4sp>
-  skos:prefLabel "sp" ;
-  skos:definition "Representa los puntos de habilidad."@es .
-
-<http://example.org/digiOntoG4spCost>
-  skos:prefLabel "sp cost" ;
-  skos:definition "Coste de SP necesario para usar un movimiento."@es .
-
-<http://example.org/digiOntoG4spd>
-  skos:prefLabel "spd" ;
-  skos:definition "Representa la velocidad."@es .
-
-<http://example.org/digiOntoG4stageName>
-  skos:prefLabel "stage name" ;
-  skos:definition "Nombre de una etapa evolutiva."@es .

@@ -11,6 +11,384 @@
     } ]
   } ]
 }, {
+  "@id" : "http://example.org/digiOntoG4Dark",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Elemento Dark."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Dark"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4Data",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Tipo Data."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Data"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4Digimon",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Entidad que representa a una criatura Digimon."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Digimon"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4Earth",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Elemento Earth."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Earth"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4Electric",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Elemento Electric."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Electric"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4Element",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Elemento que tienen movimientos y Digimon."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Element"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4EvolutionStage",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Etapa de evolución de un Digimon."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Evolution Stage"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4Fire",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Elemento Fire."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Fire"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4Free",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Tipo Free."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Free"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4Light",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Elemento Light."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Light"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4MagicMove",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Movimiento de tipo mágico, subclase de Move."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Magic Move"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4Move",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Acción que puede realizar un Digimon."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Move"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4PhysicalMove",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Movimiento físico, subclase de Move."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Physical Move"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4Plant",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Elemento Plant."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Plant"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4SupportMove",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Movimiento de soporte, subclase de Move."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Support Move"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4SupportSkill",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Habilidad de soporte aplicable a Digimon."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Support Skill"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4Type",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación de tipo de Digimon (ej. Vaccine, Virus, Data)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Type"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4Vaccine",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Tipo Vaccine."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Vaccine"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4Virus",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Tipo Virus."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Virus"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4Water",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Elemento Water."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Water"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4Wind",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Elemento Wind."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Wind"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4atk",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Representa el ataque."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "atk"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4def",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Representa la defensa."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "def"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4description",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Describe un movimiento."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "description"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4elementName",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Nombre de un elemento."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "element name"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4hasElement",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un Digimon con su elemento."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "has element"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4hasEvolutionStage",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un Digimon con su etapa evolutiva."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "has evolution stage"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4hasMoveElement",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un movimiento con su elemento."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "has move element"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4hasSupportSkill",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un Digimon con su habilidad de soporte."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "has support skill"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4hasType",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un Digimon con su tipo."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "has type"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4hp",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Representa los puntos de vida."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "hp"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4inheritable",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Indica si un movimiento puede heredarse."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "inheritable"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4int",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Representa la inteligencia."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "int"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4isStrongAgainst",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Indica ventaja de un elemento frente a otro."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "is strong against"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4isStrongTypeAgainst",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Indica ventaja de tipo frente a otro tipo."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "is strong type against"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4learnsMove",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Representa los movimientos que puede aprender un Digimon."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "learns move"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4power",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Representa la potencia de un movimiento."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "power"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4skillName",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Nombre de una habilidad de soporte."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "skill name"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4sp",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Representa los puntos de habilidad."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "sp"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4spCost",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Coste de SP necesario para usar un movimiento."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "sp cost"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4spd",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Representa la velocidad."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "spd"
+  } ]
+}, {
+  "@id" : "http://example.org/digiOntoG4stageName",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Nombre de una etapa evolutiva."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "stage name"
+  } ]
+}, {
   "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://purl.org/dc/terms/creator" : [ {

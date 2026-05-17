@@ -658,6 +658,174 @@
      -->
 
 
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Dark">
+        <skos:definition xml:lang="es">Elemento Dark.</skos:definition>
+        <skos:prefLabel>Dark</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Data">
+        <skos:definition xml:lang="es">Tipo Data.</skos:definition>
+        <skos:prefLabel>Data</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Digimon">
+        <skos:definition xml:lang="es">Entidad que representa a una criatura Digimon.</skos:definition>
+        <skos:prefLabel>Digimon</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Earth">
+        <skos:definition xml:lang="es">Elemento Earth.</skos:definition>
+        <skos:prefLabel>Earth</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Electric">
+        <skos:definition xml:lang="es">Elemento Electric.</skos:definition>
+        <skos:prefLabel>Electric</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Element">
+        <skos:definition xml:lang="es">Elemento que tienen movimientos y Digimon.</skos:definition>
+        <skos:prefLabel>Element</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4EvolutionStage">
+        <skos:definition xml:lang="es">Etapa de evolución de un Digimon.</skos:definition>
+        <skos:prefLabel>Evolution Stage</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Fire">
+        <skos:definition xml:lang="es">Elemento Fire.</skos:definition>
+        <skos:prefLabel>Fire</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Free">
+        <skos:definition xml:lang="es">Tipo Free.</skos:definition>
+        <skos:prefLabel>Free</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Light">
+        <skos:definition xml:lang="es">Elemento Light.</skos:definition>
+        <skos:prefLabel>Light</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4MagicMove">
+        <skos:definition xml:lang="es">Movimiento de tipo mágico, subclase de Move.</skos:definition>
+        <skos:prefLabel>Magic Move</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Move">
+        <skos:definition xml:lang="es">Acción que puede realizar un Digimon.</skos:definition>
+        <skos:prefLabel>Move</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4PhysicalMove">
+        <skos:definition xml:lang="es">Movimiento físico, subclase de Move.</skos:definition>
+        <skos:prefLabel>Physical Move</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Plant">
+        <skos:definition xml:lang="es">Elemento Plant.</skos:definition>
+        <skos:prefLabel>Plant</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4SupportMove">
+        <skos:definition xml:lang="es">Movimiento de soporte, subclase de Move.</skos:definition>
+        <skos:prefLabel>Support Move</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4SupportSkill">
+        <skos:definition xml:lang="es">Habilidad de soporte aplicable a Digimon.</skos:definition>
+        <skos:prefLabel>Support Skill</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Type">
+        <skos:definition xml:lang="es">Clasificación de tipo de Digimon (ej. Vaccine, Virus, Data).</skos:definition>
+        <skos:prefLabel>Type</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Vaccine">
+        <skos:definition xml:lang="es">Tipo Vaccine.</skos:definition>
+        <skos:prefLabel>Vaccine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Virus">
+        <skos:definition xml:lang="es">Tipo Virus.</skos:definition>
+        <skos:prefLabel>Virus</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Water">
+        <skos:definition xml:lang="es">Elemento Water.</skos:definition>
+        <skos:prefLabel>Water</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4Wind">
+        <skos:definition xml:lang="es">Elemento Wind.</skos:definition>
+        <skos:prefLabel>Wind</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4atk">
+        <skos:definition xml:lang="es">Representa el ataque.</skos:definition>
+        <skos:prefLabel>atk</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4def">
+        <skos:definition xml:lang="es">Representa la defensa.</skos:definition>
+        <skos:prefLabel>def</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4description">
+        <skos:definition xml:lang="es">Describe un movimiento.</skos:definition>
+        <skos:prefLabel>description</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4elementName">
+        <skos:definition xml:lang="es">Nombre de un elemento.</skos:definition>
+        <skos:prefLabel>element name</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4hasElement">
+        <skos:definition xml:lang="es">Relaciona un Digimon con su elemento.</skos:definition>
+        <skos:prefLabel>has element</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4hasEvolutionStage">
+        <skos:definition xml:lang="es">Relaciona un Digimon con su etapa evolutiva.</skos:definition>
+        <skos:prefLabel>has evolution stage</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4hasMoveElement">
+        <skos:definition xml:lang="es">Relaciona un movimiento con su elemento.</skos:definition>
+        <skos:prefLabel>has move element</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4hasSupportSkill">
+        <skos:definition xml:lang="es">Relaciona un Digimon con su habilidad de soporte.</skos:definition>
+        <skos:prefLabel>has support skill</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4hasType">
+        <skos:definition xml:lang="es">Relaciona un Digimon con su tipo.</skos:definition>
+        <skos:prefLabel>has type</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4hp">
+        <skos:definition xml:lang="es">Representa los puntos de vida.</skos:definition>
+        <skos:prefLabel>hp</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4inheritable">
+        <skos:definition xml:lang="es">Indica si un movimiento puede heredarse.</skos:definition>
+        <skos:prefLabel>inheritable</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4int">
+        <skos:definition xml:lang="es">Representa la inteligencia.</skos:definition>
+        <skos:prefLabel>int</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4isStrongAgainst">
+        <skos:definition xml:lang="es">Indica ventaja de un elemento frente a otro.</skos:definition>
+        <skos:prefLabel>is strong against</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4isStrongTypeAgainst">
+        <skos:definition xml:lang="es">Indica ventaja de tipo frente a otro tipo.</skos:definition>
+        <skos:prefLabel>is strong type against</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4learnsMove">
+        <skos:definition xml:lang="es">Representa los movimientos que puede aprender un Digimon.</skos:definition>
+        <skos:prefLabel>learns move</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4power">
+        <skos:definition xml:lang="es">Representa la potencia de un movimiento.</skos:definition>
+        <skos:prefLabel>power</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4skillName">
+        <skos:definition xml:lang="es">Nombre de una habilidad de soporte.</skos:definition>
+        <skos:prefLabel>skill name</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4sp">
+        <skos:definition xml:lang="es">Representa los puntos de habilidad.</skos:definition>
+        <skos:prefLabel>sp</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4spCost">
+        <skos:definition xml:lang="es">Coste de SP necesario para usar un movimiento.</skos:definition>
+        <skos:prefLabel>sp cost</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4spd">
+        <skos:definition xml:lang="es">Representa la velocidad.</skos:definition>
+        <skos:prefLabel>spd</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.org/digiOntoG4stageName">
+        <skos:definition xml:lang="es">Nombre de una etapa evolutiva.</skos:definition>
+        <skos:prefLabel>stage name</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
         <terms:creator xml:lang="es">Grupo4</terms:creator>
     </rdf:Description>
